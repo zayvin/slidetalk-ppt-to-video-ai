@@ -1,0 +1,5 @@
+﻿slide,start_s_planned,end_s_planned,viewer_goal,on_screen,voiceover,visual_cue,review_check
+1,0,10,Read both weeks,"Two bars, 20 of 100 and 30 of 100",A hundred visitors came each week. How many signed up? Twenty signed up in week one. Thirty signed up in week two.,Show the denominator before the comparison,Check both weeks have 100 visitors
+2,10,20,Explain the difference,30% minus 20%,The rate went from twenty percent to thirty percent. Subtract the two rates. The gap is ten percentage points.,Highlight “percentage points”,Keep the unit in one subtitle cue
+3,20,30,Explain relative change,The 10-point gap divided by the starting rate of 20%,How big is that gain compared with the starting rate? Ten divided by twenty is one half. That's a fifty percent increase.,Highlight the starting rate,Keep both the denominator and the spoken unit visible
+4,30,40,Say the result aloud,Both endpoints and both measures of change,"Our signup rate rose from twenty to thirty percent. That's ten percentage points higher, a fifty percent increase on week one.",Hold the final line until the voice finishes,Check the last word in the exported file

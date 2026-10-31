@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:05,000
+A hundred visitors came each week.
+How many signed up?
+
+2
+00:00:05,000 --> 00:00:10,000
+Twenty signed up in week one.
+Thirty signed up in week two.
+
+3
+00:00:10,000 --> 00:00:15,000
+The rate went from twenty percent
+to thirty percent.
+
+4
+00:00:15,000 --> 00:00:20,000
+Subtract the two rates.
+The gap is ten percentage points.
+
+5
+00:00:20,000 --> 00:00:25,000
+How big is that gain
+compared with the starting rate?
+
+6
+00:00:25,000 --> 00:00:30,000
+Ten divided by twenty is one half.
+That's a fifty percent increase.
+
+7
+00:00:30,000 --> 00:00:35,000
+Our signup rate rose
+from twenty to thirty percent.
+
+8
+00:00:35,000 --> 00:00:40,000
+That's ten percentage points higher,
+a fifty percent increase on week one.
+
