@@ -21,4 +21,4 @@
 
 想先試做一小段，可以使用[圖表示範教材](../../examples/chart-lesson/README.md)。要整理自己的截圖與講稿，可下載[分鏡表 CSV](../../templates/storyboard.csv)。
 
-[前往 SlideTalk 繁體中文網站查看功能與下載方式](https://www.slidetalk.online/zh-Hant?utm_source=github&utm_medium=referral&utm_campaign=ppt_to_video_kit&utm_content=guide_zh_tw) · [回到專案首頁](../../README.md)
+[前往 SlideTalk 繁體中文網站查看功能與下載方式](https://www.slidetalk.online/zh-Hant?utm_source=github&utm_medium=referral&utm_campaign=ppt_to_video_kit&utm_content=guide_zh_tw) · [回到專案首頁](../../README.zh-CN.md)

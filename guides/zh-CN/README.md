@@ -23,7 +23,7 @@
 
 做 B 站或 YouTube 财经视频，可以继续看[把一张财报表格拆成三页 PPT 和三段讲解](financial-report-video.md)。
 
-[查看 SlideTalk 中文官网与下载入口](https://www.slidetalk.online/?utm_source=github&utm_medium=referral&utm_campaign=ppt_to_video_kit&utm_content=guide_zh_cn) · [返回仓库首页](../../README.md)
+[查看 SlideTalk 中文官网与下载入口](https://www.slidetalk.online/?utm_source=github&utm_medium=referral&utm_campaign=ppt_to_video_kit&utm_content=guide_zh_cn) · [返回仓库首页](../../README.zh-CN.md)
 
 ## 继续看
 

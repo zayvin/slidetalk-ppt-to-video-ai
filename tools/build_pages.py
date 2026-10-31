@@ -49,6 +49,8 @@ OG_IMAGE = "images/og.jpg"
 def discover():
     """Map source paths to public routes. Directory routes end with a slash."""
     sources = [ROOT / "README.md", ROOT / "LICENSE.md"]
+    # Localized landing pages live at the repository root as README.<locale>.md.
+    sources += [p for p in sorted(ROOT.glob("README.*.md")) if p.is_file()]
     for section in SECTIONS:
         for path in sorted((ROOT / section).rglob("*")):
             rel = path.relative_to(ROOT)
@@ -61,6 +63,8 @@ def discover():
         name = path.relative_to(ROOT).as_posix()
         if path.name == "README.md":
             route = name[:-len("README.md")]
+        elif path.parent == ROOT and path.name.startswith("README."):
+            route = path.stem[len("README."):] + "/"
         elif path.suffix == ".md":
             route = name[:-len(".md")] + "/"
         else:
@@ -81,13 +85,19 @@ def relative_url(source_route, target_route):
 
 def page_locale(source):
     if source == "README.md":
-        return "zh-CN"
+        return "en"
     parts = PurePosixPath(source).parts
+    if len(parts) == 1 and parts[0].startswith("README."):
+        return PurePosixPath(source).stem.split(".", 1)[1]
     if len(parts) > 2 and parts[0] == "guides":
         return parts[1]
     if parts[0] in CHINESE_SECTIONS:
         return "zh-CN"
     return "en"
+
+
+def is_landing_page(source):
+    return "/" not in source and source.startswith("README")
 
 
 class Article(HTMLParser):
@@ -205,14 +215,14 @@ def structured_data(article, route, base_url, locale):
     """Schema.org markup that helps search engines and rich results."""
     canonical = base_url + "/" + quote(route, safe="/~")
     graph = []
-    if article.source == "README.md":
+    if is_landing_page(article.source):
         graph.append({
             "@type": "WebSite",
             "@id": base_url + "/#website",
             "url": base_url + "/",
             "name": f"{SITE_NAME} · PPT to Video Creator Kit",
             "description": article.description or article.title,
-            "inLanguage": "zh-CN",
+            "inLanguage": locale,
             "publisher": {"@type": "Organization", "name": SITE_NAME, "url": APP_URL},
         })
         graph.append({
@@ -279,17 +289,24 @@ def render_article(article, route, base_url, guides, verification, routes):
     locale = page_locale(article.source)
     native, lang_label, skip = LANGUAGES[locale]
     canonical = base_url + "/" + quote(route, safe="/~")
-    language_home = article.source == "README.md" or route == guides.get(locale)
+    language_home = is_landing_page(article.source) or route == guides.get(locale)
     alternate = []
+    if is_landing_page(article.source):
+        # The README.<locale>.md files are translated landing pages: point them at
+        # each other so search engines pick one version per language.
+        homes = {page_locale(src): target for src, target in routes.items() if is_landing_page(src)}
+        for code, home in sorted(homes.items()):
+            alternate.append(f'<link rel="alternate" hreflang="{code}" href="{escape(base_url)}/{home}">')
+        alternate.append(f'<link rel="alternate" hreflang="x-default" href="{escape(base_url)}/">')
+    elif language_home:
+        for code, guide in guides.items():
+            alternate.append(f'<link rel="alternate" hreflang="{code}" href="{escape(base_url)}/{guide}">')
+        alternate.append(f'<link rel="alternate" hreflang="x-default" href="{escape(base_url)}/">')
     menu = []
     for code, guide in guides.items():
         lang_name = LANGUAGES[code][0]
         current = ' aria-current="page"' if guide == route else ""
         menu.append(f'<a href="{relative_url(route, guide)}" lang="{code}" hreflang="{code}" dir="auto"{current}>{lang_name}</a>')
-        if language_home:
-            alternate.append(f'<link rel="alternate" hreflang="{code}" href="{escape(base_url)}/{guide}">')
-    if language_home:
-        alternate.append(f'<link rel="alternate" hreflang="x-default" href="{escape(base_url)}/">')
     meta = ""
     if verification:
         meta = f'<meta name="google-site-verification" content="{escape(verification, quote=True)}">'
