@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <img src="images/hero.jpg" alt="SlideTalk 创作工作室：左侧是幻灯片缩略图，中间是逐页 AI 讲解词，右侧是平台、讲解模式、内容意图和音色设置" width="100%">
+  <img src="images/zh-CN/hero.jpg" alt="SlideTalk 创作工作室：左侧是幻灯片缩略图，中间是逐页 AI 讲解词，右侧是平台、讲解模式、内容意图和音色设置" width="100%">
 </p>
 
 拖入一份 PPT，说一句「这期讲给谁听」，AI 写稿、配音、加字幕和场景动效，渲染成片，再顺手把封面、标题、简介、标签、章节一起做出来。**10 分钟拿到一条能直接发到 B 站、YouTube、视频号、抖音的成品视频**——不用出镜、不用开口、不用学剪辑。
@@ -38,7 +38,7 @@
 ## 三步，从 PPT 到可发布视频
 
 <p align="center">
-  <img src="images/import.jpg" alt="新建项目面板：选择 PPT 或 PDF，用一句话告诉 AI 讲给谁听，再选讲解模式、目标平台和音色" width="100%">
+  <img src="images/zh-CN/import.jpg" alt="新建项目面板：选择 PPT 或 PDF，用一句话告诉 AI 讲给谁听，再选讲解模式、目标平台和音色" width="100%">
 </p>
 
 1. **导入**：把 `.pptx` / `.ppsx` / `.pdf` 拖进 App，或者直接拖图片（PNG / JPG / HEIC / WEBP）。PDF 逐页渲染，版式还原最准；PPTX 保留文字、图片、形状、表格的原始位置。
@@ -48,7 +48,7 @@
 ## 你拿到的不是一个 mp4，是一整套发布物料
 
 <p align="center">
-  <img src="images/publish.jpg" alt="发布中心：自动生成封面、简介、标签和 8 个章节时间点，可一键发布到 B 站" width="100%">
+  <img src="images/zh-CN/publish.jpg" alt="发布中心：自动生成封面、简介、标签和 8 个章节时间点，可一键发布到 B 站" width="100%">
 </p>
 
 大多数工具止步于「导出一个 mp4」。而一条视频能不能涨粉，往往取决于导出之后那半小时：封面够不够抓眼、标题有没有关键词、简介有没有章节。SlideTalk 的发布中心把这些一起做掉：
@@ -76,7 +76,7 @@
 ## 58 款音色，4 种讲解模式
 
 <p align="center">
-  <img src="images/voices.jpg" alt="音色库：42 款中文音色与 16 款英文音色，按讲师教育、商务播报、亲切生活、爆款特色分类，可逐个试听" width="100%">
+  <img src="images/zh-CN/voices.jpg" alt="音色库：42 款中文音色与 16 款英文音色，按讲师教育、商务播报、亲切生活、爆款特色分类，可逐个试听" width="100%">
 </p>
 
 - 音色基于火山 Seed-TTS 2.0，**42 款中文 + 16 款英文**，分「讲师·教育」「商务·播报」「亲切·生活」「爆款·特色」四类；0.5x–2.0x 语速，可逐句试听，试听不消耗积分。

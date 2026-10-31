@@ -314,15 +314,18 @@ def render_article(article, route, base_url, guides, verification, routes):
     if len(desc) > 180:
         desc = desc[:177].rstrip() + "…"
     page_title = article.title if SITE_NAME in article.title else f"{article.title} | {SITE_NAME}"
-    og_image = ""
-    if OG_IMAGE in routes:
-        og_image = escape(base_url + "/" + OG_IMAGE)
+    # Prefer a localized social card when one exists, e.g. images/zh-CN/og.jpg.
+    og_path = f"images/{locale}/og.jpg" if f"images/{locale}/og.jpg" in routes else OG_IMAGE
+    og_image = escape(base_url + "/" + og_path) if og_path in routes else ""
+    og_alt = ("SlideTalk 把 PPT 变成带 AI 配音、字幕和封面的讲解视频。"
+              if locale in {"zh-CN", "zh-TW"} else
+              "SlideTalk turns a PowerPoint deck into a narrated video with subtitles, cover and titles.")
     social = ""
     if og_image:
         social = f"""<meta property="og:image" content="{og_image}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="SlideTalk turns a PowerPoint deck into a narrated video with subtitles, cover and titles.">
+<meta property="og:image:alt" content="{og_alt}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="{og_image}">"""
     schema = structured_data(article, route, base_url, locale)
