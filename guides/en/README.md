@@ -27,3 +27,9 @@ The chart lesson includes an editable PowerPoint, the same pages as a PDF, two s
 A PDF is useful when the page layout matters more than editable objects. Build out progressive reveals as separate pages before exporting the PDF. SlideTalk renders the finished video locally. Its AI writing and voice generation use an internet connection. [File format guide](../../handbook/pptx-or-pdf.md) · [Caption and export checks](../../handbook/subtitles-and-export.md)
 
 [See SlideTalk and its App Store download](https://www.slidetalk.online/en?utm_source=github&utm_medium=referral&utm_campaign=ppt_to_video_kit&utm_content=guide_en) · [Creator Kit home](../../README.md)
+
+## Keep reading
+
+- Turning a deck into a sellable course: [course video without recording yourself](ppt-to-video-for-course-creators.md)
+- Choosing between the four approaches: [screen recording, editing, online tools, SlideTalk](../../compare/ppt-to-video-tools.md)
+- Formats, watermarks, credits and privacy: [FAQ](../../faq/README.md)

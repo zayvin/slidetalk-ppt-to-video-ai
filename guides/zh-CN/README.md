@@ -24,3 +24,9 @@
 做 B 站或 YouTube 财经视频，可以继续看[把一张财报表格拆成三页 PPT 和三段讲解](financial-report-video.md)。
 
 [查看 SlideTalk 中文官网与下载入口](https://www.slidetalk.online/?utm_source=github&utm_medium=referral&utm_campaign=ppt_to_video_kit&utm_content=guide_zh_cn) · [返回仓库首页](../../README.md)
+
+## 继续看
+
+- 按身份选方案：[课程录制](../../use-cases/course-video.md) · [B 站知识区日更](../../use-cases/bilibili-knowledge.md) · [财报解读](../../use-cases/financial-report-video.md) · [企业培训](../../use-cases/corporate-training.md) · [竖屏短视频](../../use-cases/short-video.md)
+- 选哪种做法：[四种做法对比](../../compare/ppt-to-video-tools.md)
+- 格式、水印、积分、隐私：[常见问题](../../faq/README.md)

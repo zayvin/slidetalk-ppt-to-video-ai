@@ -14,23 +14,52 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     permissions:
       contents: read
-      pages: read
+      # Needed so the action below can create the Pages site on a brand new
+      # repository. Without it the job stops with
+      # "Get Pages site failed ... Error: Not Found".
+      pages: write
     steps:
       - uses: actions/checkout@v4
-      - name: Read Pages URL
+
+      - name: Enable Pages and read the site URL
         id: pages
         uses: actions/configure-pages@v5
+        with:
+          # Creates the Pages site (build_type=workflow) when the repository has
+          # none yet. If the repository forbids this, the next step still builds
+          # the site and prints what to click once.
+          enablement: true
+          token: ${{ secrets.PAGES_TOKEN || secrets.GITHUB_TOKEN }}
+        continue-on-error: true
+
+      - name: Resolve the site URL
+        id: site
+        env:
+          CONFIGURED_URL: ${{ steps.pages.outputs.base_url }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          url="${CONFIGURED_URL:-}"
+          if [ -z "$url" ]; then
+            url="https://${REPOSITORY%%/*}.github.io/${REPOSITORY#*/}"
+            echo "::warning title=GitHub Pages is not enabled::Open https://github.com/${REPOSITORY}/settings/pages, set Source to \"GitHub Actions\", then re-run this workflow. Building now with the expected URL ${url}."
+          fi
+          echo "base_url=${url%/}" >> "$GITHUB_OUTPUT"
+
       - name: Install Pandoc
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends pandoc
+
       - name: Build guides
         env:
-          SITE_URL: ${{ steps.pages.outputs.base_url }}
+          SITE_URL: ${{ steps.site.outputs.base_url }}
           SEARCH_CONSOLE_VERIFICATION: ${{ vars.SEARCH_CONSOLE_VERIFICATION }}
         run: python3 tools/build_pages.py --base-url "$SITE_URL" --output _site
+
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
@@ -38,6 +67,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     permissions:
       pages: write
       id-token: write
