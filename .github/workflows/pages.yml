@@ -15,11 +15,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    outputs:
+      pages_ready: ${{ steps.check.outputs.ready }}
     permissions:
       contents: read
-      # Needed so the action below can create the Pages site on a brand new
-      # repository. Without it the job stops with
-      # "Get Pages site failed ... Error: Not Found".
+      # Lets configure-pages create the Pages site on a repository that has none.
+      # The default token cannot always do this; see the check step below.
       pages: write
     steps:
       - uses: actions/checkout@v4
@@ -29,8 +30,7 @@ jobs:
         uses: actions/configure-pages@v5
         with:
           # Creates the Pages site (build_type=workflow) when the repository has
-          # none yet. If the repository forbids this, the next step still builds
-          # the site and prints what to click once.
+          # none yet. Requires a token with admin rights; PAGES_TOKEN is optional.
           enablement: true
           token: ${{ secrets.PAGES_TOKEN || secrets.GITHUB_TOKEN }}
         continue-on-error: true
@@ -45,9 +45,38 @@ jobs:
           url="${CONFIGURED_URL:-}"
           if [ -z "$url" ]; then
             url="https://${REPOSITORY%%/*}.github.io/${REPOSITORY#*/}"
-            echo "::warning title=GitHub Pages is not enabled::Open https://github.com/${REPOSITORY}/settings/pages, set Source to \"GitHub Actions\", then re-run this workflow. Building now with the expected URL ${url}."
+            echo "::warning title=Could not read the Pages URL::Building with the expected URL ${url}."
           fi
           echo "base_url=${url%/}" >> "$GITHUB_OUTPUT"
+
+      - name: Check that GitHub Pages is enabled
+        id: check
+        env:
+          TOKEN: ${{ secrets.PAGES_TOKEN || secrets.GITHUB_TOKEN }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          code=$(curl -s -o /dev/null -w '%{http_code}' \
+            -H "Authorization: Bearer $TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${REPOSITORY}/pages")
+          if [ "$code" = "200" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          echo "ready=false" >> "$GITHUB_OUTPUT"
+          echo "::warning title=GitHub Pages is not enabled::Open https://github.com/${REPOSITORY}/settings/pages and set Source to \"GitHub Actions\". The site is still built as an artifact."
+          {
+            echo "### GitHub Pages is not enabled for this repository"
+            echo
+            echo "The site was built and uploaded as an artifact, but it cannot be published yet."
+            echo
+            echo "1. Open https://github.com/${REPOSITORY}/settings/pages"
+            echo "2. Set **Source** to **GitHub Actions**"
+            echo "3. Re-run this workflow (Actions → Publish resource guides → Re-run jobs)"
+            echo
+            echo "Nothing else needs to change — the next run will publish automatically."
+          } >> "$GITHUB_STEP_SUMMARY"
 
       - name: Install Pandoc
         run: |
@@ -75,6 +104,15 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      - name: Explain what is missing
+        if: needs.build.outputs.pages_ready != 'true'
+        env:
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          echo "::error title=Enable GitHub Pages first::Open https://github.com/${REPOSITORY}/settings/pages, set Source to \"GitHub Actions\", then re-run this workflow. The site itself built successfully."
+          exit 1
+
       - name: Publish site
+        if: needs.build.outputs.pages_ready == 'true'
         id: deployment
         uses: actions/deploy-pages@v4
