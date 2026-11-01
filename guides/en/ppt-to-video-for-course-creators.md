@@ -52,4 +52,4 @@ Being clear about limits saves you a wasted afternoon:
 
 The [chart lesson](../../examples/chart-lesson/README.md) is a four-slide deck with an editable PowerPoint, a matching PDF, English and Chinese scripts, and two SRT files. It is designed to be finished in 40 seconds, which makes it a cheap way to test whether a voice and a subtitle style suit your course before you commit a whole term to them.
 
-Ready to try the real thing? [Download SlideTalk](https://apps.apple.com/app/id6800015747) · [Compare the four approaches to PPT-to-video](../../compare/ppt-to-video-tools.md) · [Read the FAQ](../../faq/README.md)
+Ready to try the real thing? [Download SlideTalk](https://apps.apple.com/us/app/slidetalk-ppt-to-video-ai/id6800015747) · [Compare the four approaches to PPT-to-video](../../compare/ppt-to-video-tools.md) · [Read the FAQ](../../faq/README.md)

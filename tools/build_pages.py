@@ -42,6 +42,10 @@ NAV = (
 )
 APP_URL = "https://www.slidetalk.online/"
 STORE_URL = "https://apps.apple.com/app/id6800015747"
+# The English surface uses the explicit US storefront; other locales keep the
+# bare link so Apple resolves the visitor's own storefront (see SlideTalkWeb
+# src/lib/site-config.ts for why country-pinned links were reverted).
+STORE_URL_US = "https://apps.apple.com/us/app/slidetalk-ppt-to-video-ai/id6800015747"
 SITE_NAME = "SlideTalk"
 OG_IMAGE = "images/og.jpg"
 
@@ -234,8 +238,8 @@ def structured_data(article, route, base_url, locale):
             "applicationSubCategory": "PPT to video converter",
             "operatingSystem": "macOS 15.1 or later, iOS 17 or later, iPadOS 17 or later",
             "url": APP_URL,
-            "downloadUrl": STORE_URL,
-            "installUrl": STORE_URL,
+            "downloadUrl": store_url(locale),
+            "installUrl": store_url(locale),
             "inLanguage": ["zh-CN", "en"],
             "featureList": [
                 "AI narration script per slide",
@@ -250,7 +254,7 @@ def structured_data(article, route, base_url, locale):
                 "price": "0",
                 "priceCurrency": "USD",
                 "description": "Free download. Import, editing, voice preview, rendering and export are free; AI generation is metered with credits.",
-                "url": STORE_URL,
+                "url": store_url(locale),
             },
             "publisher": {"@type": "Organization", "name": SITE_NAME, "url": APP_URL},
         })
@@ -275,6 +279,10 @@ def structured_data(article, route, base_url, locale):
     return '<script type="application/ld+json">' + payload.replace("</", "<\\/") + "</script>"
 
 
+def store_url(locale):
+    return STORE_URL_US if locale == "en" else STORE_URL
+
+
 def navigation(route, routes, locale):
     labels = 1 if locale in {"zh-CN", "zh-TW"} else 2
     links = []
@@ -282,7 +290,7 @@ def navigation(route, routes, locale):
         if target in routes.values():
             current = ' aria-current="page"' if route == target else ""
             links.append(f'<a href="{relative_url(route, target)}"{current}>{zh if labels == 1 else en}</a>')
-    return '<div class="links">' + "".join(links) + f'<a class="cta" href="{STORE_URL}">App Store</a></div>'
+    return '<div class="links">' + "".join(links) + f'<a class="cta" href="{store_url(locale)}">App Store</a></div>'
 
 
 def render_article(article, route, base_url, guides, verification, routes):
@@ -386,7 +394,7 @@ def llms_index(articles, routes, base_url):
         if summary:
             line += f": {summary[:160]}"
         lines.append(line)
-    lines += ["", "## App", "", f"- [SlideTalk product site]({APP_URL})", f"- [App Store]({STORE_URL})", ""]
+    lines += ["", "## App", "", f"- [SlideTalk product site]({APP_URL})", f"- [App Store]({STORE_URL_US})", ""]
     return "\n".join(lines)
 
 
