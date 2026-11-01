@@ -243,7 +243,7 @@ def structured_data(article, route, base_url, locale):
             "inLanguage": ["zh-CN", "en"],
             "featureList": [
                 "AI narration script per slide",
-                "58 AI voices in Chinese and English",
+                "100+ AI voices in Chinese and English",
                 "Burned-in subtitles plus sidecar SRT",
                 "Six scene animations and Ken Burns motion",
                 "On-device AVFoundation rendering up to 4K",

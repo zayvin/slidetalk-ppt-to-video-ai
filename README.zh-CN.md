@@ -73,13 +73,13 @@
 - **预览即成片**：预览播放器和导出器共用同一套 compositor，你看到的就是导出的样子。
 - **480p–4K、时长不限**：长片可以在任意页打分段点，拆成多支视频分别导出，适合系列课和分 P 投稿。
 
-## 58 款音色，4 种讲解模式
+## 上百款音色，4 种讲解模式
 
 <p align="center">
   <img src="images/zh-CN/voices.jpg" alt="音色库：42 款中文音色与 16 款英文音色，按讲师教育、商务播报、亲切生活、爆款特色分类，可逐个试听" width="100%">
 </p>
 
-- 音色基于火山 Seed-TTS 2.0，**42 款中文 + 16 款英文**，分「讲师·教育」「商务·播报」「亲切·生活」「爆款·特色」四类；0.5x–2.0x 语速，可逐句试听，试听不消耗积分。
+- 音色基于火山 Seed-TTS 2.0，**上百款**，分「讲师·教育」「商务·播报」「亲切·生活」「爆款·特色」四类；0.5x–2.0x 语速，可逐句试听，试听不消耗积分。目前中文和英文音色最全，音色库还在持续扩充。
 - **4 种讲解模式**：单人讲解、双人访谈、师生问答、新闻播报。双人模式自动给两个角色分配不同音色，适合播客、周报解读、产品评测这类有对话感的视频。
 - 讲稿语言支持中文、英文、中英双语。
 
@@ -144,16 +144,40 @@
 
 打开 [示例 PPT](examples/chart-lesson/example.pptx) 或 [PDF](examples/chart-lesson/example.pdf)，照着 [中英文讲稿](examples/chart-lesson/narration.md) 念一遍，再用 [中英文 SRT](examples/chart-lesson/en.srt) 对轴。数字全部虚构，可以随便改。
 
-## 教程语言
+## 16 种语言，从界面到字幕
 
-法语篇讲表单提交，阿拉伯语篇讲地图，中文篇讲图表和图书馆志愿者培训——每篇都用不同素材，避免读起来像同一篇机翻。
+App 界面、AI 讲稿、字幕渲染和这套教程都覆盖 16 种语言。下面把语言、对应代码和教程一次列全：
 
-| | | | |
+| 语言 | 本地名称 | 代码 | 教程 |
 | --- | --- | --- | --- |
-| [English](guides/en/README.md) | [简体中文](guides/zh-CN/README.md) | [繁體中文](guides/zh-TW/README.md) | [العربية](guides/ar/README.md) |
-| [Deutsch](guides/de/README.md) | [Español](guides/es/README.md) | [Français](guides/fr/README.md) | [हिन्दी](guides/hi/README.md) |
-| [Italiano](guides/it/README.md) | [日本語](guides/ja/README.md) | [한국어](guides/ko/README.md) | [Nederlands](guides/nl/README.md) |
-| [Norsk bokmål](guides/nb/README.md) | [Português](guides/pt/README.md) | [Русский](guides/ru/README.md) | [Svenska](guides/sv/README.md) |
+| 英语 | English | `en` | [把 PPT 转成带配音的 MP4](guides/en/README.md) |
+| 简体中文 | 简体中文 | `zh-CN` | [一页图表做成微课](guides/zh-CN/README.md) |
+| 繁体中文 | 繁體中文 | `zh-TW` | [繁體中文教學](guides/zh-TW/README.md) |
+| 阿拉伯语 | العربية | `ar` | [دليل عربي](guides/ar/README.md) |
+| 德语 | Deutsch | `de` | [Deutsche Anleitung](guides/de/README.md) |
+| 西班牙语 | Español | `es` | [Guía en español](guides/es/README.md) |
+| 法语 | Français | `fr` | [Guide en français](guides/fr/README.md) |
+| 印地语 | हिन्दी | `hi` | [हिन्दी गाइड](guides/hi/README.md) |
+| 意大利语 | Italiano | `it` | [Guida in italiano](guides/it/README.md) |
+| 日语 | 日本語 | `ja` | [日本語ガイド](guides/ja/README.md) |
+| 韩语 | 한국어 | `ko` | [한국어 가이드](guides/ko/README.md) |
+| 挪威语（书面） | Norsk bokmål | `nb` | [Norsk veiledning](guides/nb/README.md) |
+| 荷兰语 | Nederlands | `nl` | [Nederlandse handleiding](guides/nl/README.md) |
+| 葡萄牙语 | Português | `pt` | [Guia em português](guides/pt/README.md) |
+| 俄语 | Русский | `ru` | [Руководство на русском](guides/ru/README.md) |
+| 瑞典语 | Svenska | `sv` | [Svensk guide](guides/sv/README.md) |
+
+「支持」具体支持到哪一步：
+
+| 范围 | 覆盖情况 |
+| --- | --- |
+| App 界面 | 上表 16 种语言全覆盖 |
+| AI 讲稿 | 你用哪种语言描述需求就写哪种；中文、英文、中英双语支持最完整 |
+| AI 配音 | 上百款音色，中文和英文最全，音色库还在扩充 |
+| 字幕 | 硬压字幕对中、日、韩做安全断句；旁挂 `.srt` 支持任意语言 |
+| 本仓库 | 教程、分镜表、检查清单覆盖 16 种语言 |
+
+每篇教程刻意用不同素材：法语篇讲表单提交，阿拉伯语篇讲地图，中文篇讲图表和图书馆志愿者培训——避免读起来像同一篇机翻。
 
 ## 常见问题（精选）
 

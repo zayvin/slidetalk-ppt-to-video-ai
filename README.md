@@ -71,13 +71,13 @@ A slideshow with a voice on top loses the viewer in thirty seconds. SlideTalk ad
 - **Preview is the final cut** — the preview player and the exporter share one compositor, so what you see is what lands in the file.
 - **480p to 4K, any length** — drop a split point on any page and one long deck exports as several videos, which is exactly what a series or a multi-part upload needs.
 
-## 58 voices, 4 narration modes
+## 100+ AI voices, 4 narration modes
 
 <p align="center">
   <img src="images/voices.jpg" alt="Voice library: 42 Chinese and 16 English voices grouped into lecturer, business, warm and trending categories, each with a preview button" width="100%">
 </p>
 
-- Voices run on Volcengine Seed-TTS 2.0: **42 Chinese and 16 English**, grouped into lecturer/education, business/broadcast, warm/lifestyle and trending/character. Speed from 0.5x to 2.0x, audition line by line, and auditioning costs no credits.
+- Voices run on Volcengine Seed-TTS 2.0: **more than a hundred AI voices**, grouped into lecturer/education, business/broadcast, warm/lifestyle and trending/character. Speed from 0.5x to 2.0x, audition line by line, and auditioning costs no credits. Chinese and English are the deepest today, and the library keeps growing.
 - **Four narration modes** — solo, two-person interview, teacher–student Q&A, and news anchor. Two-person modes assign a different voice to each role, which is what makes podcasts, weekly reviews and product teardowns feel like a conversation instead of a monologue.
 - Scripts can be Chinese, English, or bilingual.
 
@@ -142,16 +142,40 @@ Twenty of the first hundred visitors signed up for a newsletter, then thirty of 
 
 Open the [PowerPoint](examples/chart-lesson/example.pptx) or the [PDF](examples/chart-lesson/example.pdf), read the [English or Chinese script](examples/chart-lesson/narration.md) aloud, then check your timing against the [SRT files](examples/chart-lesson/en.srt). Every figure is fictional — change them freely.
 
-## Tutorials in 16 languages
+## 16 languages, end to end
 
-The French guide walks through a form submission, the Arabic one narrates a map, the Chinese ones explain a chart and train a library volunteer — each uses different material so none of them reads like the same text run through a translator.
+The app interface, the AI narration script, the subtitle renderer and this kit all work in 16 languages. Here is the full list, with the code each one uses and the tutorial that walks through it:
 
-| | | | |
+| Language | Native name | Code | Tutorial |
 | --- | --- | --- | --- |
-| [English](guides/en/README.md) | [简体中文](guides/zh-CN/README.md) | [繁體中文](guides/zh-TW/README.md) | [العربية](guides/ar/README.md) |
-| [Deutsch](guides/de/README.md) | [Español](guides/es/README.md) | [Français](guides/fr/README.md) | [हिन्दी](guides/hi/README.md) |
-| [Italiano](guides/it/README.md) | [日本語](guides/ja/README.md) | [한국어](guides/ko/README.md) | [Nederlands](guides/nl/README.md) |
-| [Norsk bokmål](guides/nb/README.md) | [Português](guides/pt/README.md) | [Русский](guides/ru/README.md) | [Svenska](guides/sv/README.md) |
+| English | English | `en` | [Convert a deck to MP4 with narration](guides/en/README.md) |
+| Chinese (Simplified) | 简体中文 | `zh-CN` | [一页图表做成微课](guides/zh-CN/README.md) |
+| Chinese (Traditional) | 繁體中文 | `zh-TW` | [繁體中文教學](guides/zh-TW/README.md) |
+| Arabic | العربية | `ar` | [دليل عربي](guides/ar/README.md) |
+| German | Deutsch | `de` | [Deutsche Anleitung](guides/de/README.md) |
+| Spanish | Español | `es` | [Guía en español](guides/es/README.md) |
+| French | Français | `fr` | [Guide en français](guides/fr/README.md) |
+| Hindi | हिन्दी | `hi` | [हिन्दी गाइड](guides/hi/README.md) |
+| Italian | Italiano | `it` | [Guida in italiano](guides/it/README.md) |
+| Japanese | 日本語 | `ja` | [日本語ガイド](guides/ja/README.md) |
+| Korean | 한국어 | `ko` | [한국어 가이드](guides/ko/README.md) |
+| Norwegian Bokmål | Norsk bokmål | `nb` | [Norsk veiledning](guides/nb/README.md) |
+| Dutch | Nederlands | `nl` | [Nederlandse handleiding](guides/nl/README.md) |
+| Portuguese | Português | `pt` | [Guia em português](guides/pt/README.md) |
+| Russian | Русский | `ru` | [Руководство на русском](guides/ru/README.md) |
+| Swedish | Svenska | `sv` | [Svensk guide](guides/sv/README.md) |
+
+What "supported" actually covers, language by language:
+
+| Surface | Coverage |
+| --- | --- |
+| App interface | All 16 languages above |
+| AI narration script | Written in whichever language you brief it in; Chinese, English and bilingual decks are first-class |
+| AI voiceover | 100+ voices, deepest in Chinese and English, with the library still growing |
+| Subtitles | Burned-in captions break lines safely for Chinese, Japanese and Korean; the sidecar `.srt` works in any language |
+| This repository | Guides, storyboards and checklists in all 16 languages |
+
+Each guide uses different source material on purpose — the French one walks through a form submission, the Arabic one narrates a map, the Chinese ones explain a chart and train a library volunteer — so none of them reads like the same text run through a translator.
 
 ## FAQ highlights
 
