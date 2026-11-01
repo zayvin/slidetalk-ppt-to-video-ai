@@ -4,6 +4,7 @@
 
 <p align="center">
   <a href="https://apps.apple.com/app/id6800015747"><img alt="Download SlideTalk on the App Store" src="https://img.shields.io/badge/App%20Store-%E5%85%8D%E8%B4%B9%E4%B8%8B%E8%BD%BD-0B7A75?style=for-the-badge&logo=apple&logoColor=white"></a>
+  <a href="https://www.slidetalk.online/?utm_source=github&utm_medium=referral&utm_campaign=ppt_to_video_kit&utm_content=readme_zh_badge"><img alt="SlideTalk 官网" src="https://img.shields.io/badge/%E5%AE%98%E7%BD%91-slidetalk.online-075658?style=for-the-badge&logo=safari&logoColor=white"></a>
   <img alt="macOS 15.1+, iOS 17+, iPadOS 17+" src="https://img.shields.io/badge/macOS%2015.1%2B%20%C2%B7%20iOS%2017%2B%20%C2%B7%20iPadOS%2017%2B-152d38?style=for-the-badge">
   <img alt="Materials licensed CC BY 4.0" src="https://img.shields.io/badge/%E7%B4%A0%E6%9D%90-CC%20BY%204.0-2f7d32?style=for-the-badge">
 </p>
@@ -16,6 +17,7 @@
 
 这是一个为「有 PPT、想做成视频」的人准备的**免费素材仓库**：可编辑的示例 PPT、逐句讲稿、SRT 字幕、分镜表、发布检查清单，以及 16 种语言的图文教程。素材全部 CC BY 4.0，可以随便改、随便商用。
 
+- **想先看看** → [官网 slidetalk.online](https://www.slidetalk.online/?utm_source=github&utm_medium=referral&utm_campaign=ppt_to_video_kit&utm_content=readme_zh_bullet) 有完整功能演示、音色试听、定价说明和 10 分钟产品视频
 - **要工具** → [App Store 下载 SlideTalk](https://apps.apple.com/app/id6800015747)（Mac / iPhone / iPad，注册送 600 积分）
 - **要模板** → 直接拿 [示例 PPT 与讲稿](examples/chart-lesson/README.md)、[分镜表](templates/storyboard.csv)、[发布检查清单](templates/export-checklist.md)
 - **要方法** → 按你的身份看：[课程录制](use-cases/course-video.zh-CN.md) · [B 站知识区日更](use-cases/bilibili-knowledge.zh-CN.md) · [财报解读](use-cases/financial-report-video.zh-CN.md) · [企业培训](use-cases/corporate-training.zh-CN.md) · [竖屏短视频](use-cases/short-video.zh-CN.md)
@@ -204,5 +206,6 @@ App 界面、AI 讲稿、字幕渲染和这套教程都覆盖 16 种语言。下
 
 <p align="center">
   <a href="https://apps.apple.com/app/id6800015747"><b>→ 下载 SlideTalk，做你的第一条视频</b></a><br>
-  <sub>免费下载 · 注册送 600 积分 · 编辑 / 渲染 / 导出永久免费</sub>
+  <sub>免费下载 · 注册送 600 积分 · 编辑 / 渲染 / 导出永久免费</sub><br>
+  <sub>功能演示、音色与定价：<a href="https://www.slidetalk.online/?utm_source=github&utm_medium=referral&utm_campaign=ppt_to_video_kit&utm_content=readme_zh_footer">slidetalk.online</a></sub>
 </p>

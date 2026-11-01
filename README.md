@@ -4,6 +4,7 @@
 
 <p align="center">
   <a href="https://apps.apple.com/us/app/slidetalk-ppt-to-video-ai/id6800015747"><img alt="Download SlideTalk on the App Store" src="https://img.shields.io/badge/App%20Store-Free%20download-0B7A75?style=for-the-badge&logo=apple&logoColor=white"></a>
+  <a href="https://www.slidetalk.online/en?utm_source=github&utm_medium=referral&utm_campaign=ppt_to_video_kit&utm_content=readme_badge"><img alt="SlideTalk official website" src="https://img.shields.io/badge/Website-slidetalk.online-075658?style=for-the-badge&logo=safari&logoColor=white"></a>
   <img alt="macOS 15.1+, iOS 17+, iPadOS 17+" src="https://img.shields.io/badge/macOS%2015.1%2B%20%C2%B7%20iOS%2017%2B%20%C2%B7%20iPadOS%2017%2B-152d38?style=for-the-badge">
   <img alt="Materials licensed CC BY 4.0" src="https://img.shields.io/badge/Materials-CC%20BY%204.0-2f7d32?style=for-the-badge">
 </p>
@@ -16,6 +17,7 @@ Drop in a PowerPoint deck, say one sentence about who is watching, and SlideTalk
 
 This repository is the free companion kit: an editable sample deck, per-slide scripts, SRT files, storyboards, a pre-publish checklist, and illustrated tutorials in 16 languages. Everything is CC BY 4.0 — adapt it, reuse it commercially, just credit the kit.
 
+- **Want the full picture** → [slidetalk.online](https://www.slidetalk.online/en?utm_source=github&utm_medium=referral&utm_campaign=ppt_to_video_kit&utm_content=readme_bullet) has the product tour, the voice library, pricing and a 10-minute demo
 - **Want the tool** → [SlideTalk on the App Store](https://apps.apple.com/us/app/slidetalk-ppt-to-video-ai/id6800015747) (Mac, iPhone, iPad; 600 free credits on sign-up)
 - **Want templates** → grab the [sample deck and script](examples/chart-lesson/README.md), the [storyboard](templates/storyboard.csv) or the [export checklist](templates/export-checklist.md)
 - **Want a method** → pick your role: [course video](use-cases/course-video.md) · [Bilibili knowledge channel](use-cases/bilibili-knowledge.md) · [financial report breakdown](use-cases/financial-report-video.md) · [corporate training](use-cases/corporate-training.md) · [vertical short video](use-cases/short-video.md)
@@ -202,5 +204,6 @@ The guides, sample deck, scripts, subtitles and worksheets in this repository ar
 
 <p align="center">
   <a href="https://apps.apple.com/us/app/slidetalk-ppt-to-video-ai/id6800015747"><b>→ Download SlideTalk and make your first video</b></a><br>
-  <sub>Free download · 600 credits on sign-up · editing, rendering and export are free forever</sub>
+  <sub>Free download · 600 credits on sign-up · editing, rendering and export are free forever</sub><br>
+  <sub>Features, voice library and pricing: <a href="https://www.slidetalk.online/en?utm_source=github&utm_medium=referral&utm_campaign=ppt_to_video_kit&utm_content=readme_footer">slidetalk.online</a></sub>
 </p>
