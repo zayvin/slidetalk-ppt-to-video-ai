@@ -1,71 +1,71 @@
-# 课程录制不用重录：把课件 PPT 变成可售卖的课程视频
+# Course video without re-recording: turn your lecture slides into a sellable course
 
-一门 30 课时的课，传统录法是：备稿、布光、录屏、口误重录、剪掉咳嗽声、手动上字幕、导出、上传。单课时 3–5 小时，一门课两三个月。最要命的是**改一页就得重录一整节**——教材改版、数据更新、讲师换人，全部推倒重来。
+Recording a 30-lesson course the traditional way means: prep the script, set up lighting, screen-record, restart whenever you fluff a line, cut the coughs out, hand-time the captions, export, upload. Three to five hours per lesson, two or three months for the course. The worst part is that **changing one slide means re-recording a whole lesson** — a textbook update, a data refresh, a different instructor, and it all starts again.
 
-用 SlideTalk 的做法是：课件还在 PPT 里，讲稿在 App 里，改哪页改哪页，重新生成那一页的配音，其余不动。
+With SlideTalk the deck stays a deck, the script lives in the app, and you fix the page you need to fix. Regenerate that page's voiceover and the rest is untouched.
 
-## 适合谁
+## Who this is for
 
-- **知识付费作者**：一套课要卖两年，内容必须能低成本迭代
-- **高校教师 / 培训机构讲师**：同一门课每学期都要讲一遍，但每次都有微调
-- **企业内训师**：课件由业务部门提供，你负责把它变成能看的课
-- **想做出海课程的人**：同一份课件要出中英双语版本
+- **Paid-course authors** whose course has to sell for two years and therefore has to be cheap to update
+- **University lecturers and training providers** who teach the same course every term with small changes
+- **Corporate trainers** handed a deck by the business and asked to make it watchable
+- **Anyone selling the same course in a second language**
 
-## 具体怎么设置
+## The settings that matter
 
-| 设置项 | 建议 | 为什么 |
+| Setting | Recommended | Why |
 | --- | --- | --- |
-| 输入格式 | 含图表的课件用 **PDF**，纯文字课件用 **PPTX** | PDF 版式 100% 还原，图表不会走样 |
-| 讲解模式 | **单人讲解**（讲师口吻）；答疑型课程用 **师生问答** | 问答模式天然带「学生提问 → 老师解释」的节奏，比独白耐听 |
-| 音色 | 「讲师·教育」类，语速 1.0x–1.1x | 教育类音色咬字清楚、句尾不上扬，适合长时间听 |
-| 目标平台 | **YouTube** 或 **播客**（长视频规格） | 决定画幅、封面比例和标题字数上限 |
-| 内容意图 | 写清楚「面向谁、前置知识是什么、学完能做什么」 | 直接决定讲稿的术语密度 |
-| 分段 | 每章打一个分段点，导出多支视频 | 系列课按章节卖，也方便学员回看 |
+| Input | **PDF** for chart-heavy decks, **PPTX** for text decks | PDF reproduces layout exactly; charts never shift |
+| Narration mode | **Solo** for lectures; **teacher–student Q&A** for tutorials | Q&A has a built-in rhythm that monologue lacks |
+| Voice | Lecturer/education, 1.0x–1.1x | Clear articulation, no rising endings — survives long listening |
+| Target platform | **YouTube** or **podcast** (long-form specs) | Sets aspect ratio, cover ratio and title length |
+| Brief | Say who is watching, what they already know, what they should be able to do afterwards | Drives terminology density |
+| Splits | One split point per chapter, export as separate videos | Chapters become sellable units and are easy to revise |
 
-## 一门 30 课时课程的成本对比
+## What a 30-lesson course actually costs
 
-| | 传统录课 | SlideTalk |
+| | Traditional recording | SlideTalk |
 | --- | --- | --- |
-| 单课时制作 | 3–5 小时 | 20–40 分钟（含审稿） |
-| 30 课时总耗时 | 90–150 小时（约 2–3 个月） | 10–20 小时（约 2–3 天） |
-| 改一页的代价 | 重录整节 | 改那一页的稿，重新生成该页配音 |
-| 出双语版 | 重录一遍 | 讲稿切英文，换英文音色，重新生成 |
-| 字幕 | 手动对轴或第三方识别 | 自动烧进画面 + 旁挂 `.srt` |
-| AI 费用 | 0（但人力成本高） | 一条 10 页视频约 352 积分 ≈ ¥3.5 |
+| Per lesson | 3–5 hours | 20–40 minutes including review |
+| 30 lessons | 90–150 hours (2–3 months) | 10–20 hours (2–3 days) |
+| Changing one slide | Re-record the lesson | Edit that page's script, regenerate its voiceover |
+| A second language | Record everything again | Re-brief the script in the target language, switch voice |
+| Captions | Hand-timed or third-party ASR plus cleanup | Burned in automatically, plus a sidecar `.srt` |
+| AI cost | 0 (but labour is the cost) | ~352 credits ≈ US$0.50 per ten-slide video |
 
-耗时是量级参考，取决于你的审稿速度。真正的差别是**返工成本**：传统录课最贵的是「改一页」，SlideTalk 里改一页只改一页。
+These are order-of-magnitude figures that depend on how fast you review. The real difference is **rework cost**: traditional recording punishes every change, SlideTalk charges you for one page.
 
-## 系列课的三个实操技巧
+## Three things that make a series work
 
-**1. 用分段点做「章节即产品」**
-30 页的课件不要导成一条 40 分钟的长片。在每一章首页打分段点，导成 5–6 支 8 分钟的视频，每支单独配封面和标题。这样既能按章售卖，也符合 B 站分 P、YouTube 播放列表的习惯。长片分段时可以选择「重复上一段末页」做衔接，观众不会觉得突兀。
+**1. Sell chapters, not one long file**
+Do not export a 40-minute monolith from a 30-slide deck. Put a split point on each chapter's first slide and export five or six 8-minute videos, each with its own cover and title. They can be sold individually, reordered, or replaced without touching the rest. When splitting, you can repeat the previous segment's last slide for continuity so the cut does not feel abrupt.
 
-**2. 开场 15 秒决定完播率**
-课程视频的前 15 秒不要说「大家好，今天我们来讲第三章」。改成一句具体的问题：「为什么你的模型在训练集上 99%，上线就崩？」——AI 生成的稿子偏平，这一句建议自己改。
+**2. The first fifteen seconds decide completion rate**
+Do not open with "Hi everyone, today we're looking at chapter three". Open with a concrete question: "Why does your model score 99% in training and fall apart in production?" AI drafts usually open with the first version — rewrite it.
 
-**3. 双语版本不要逐句直译**
-中英双语讲稿不是把中文翻成英文。中文习惯「我们先看这个图」，英文更自然的是「Look at the dip in week three」。用 AI 生成英文稿时，把内容意图改成英文写一遍（例如 "Explain to US undergrads why the training accuracy is misleading"），得到的是英文思维写出来的稿，不是翻译腔。
+**3. Do not translate a bilingual edition, rewrite it**
+A bilingual script is not a sentence-by-sentence translation. Chinese naturally says "we look at this chart first"; English is more natural as "look at the dip in week three". When generating the English edition, write the brief in English ("explain to US undergraduates why training accuracy is misleading") and you get prose written in English, not translated into it.
 
-## 常见坑
+## Common traps
 
-- **PPT 母版字号太小**：成片在手机上看，正文小于 24pt 就糊。改 PPT 比改视频便宜。
-- **一页塞了 8 个要点**：视频不是讲义。一页讲 2–3 个点，剩下的拆成新页。App 里的「讲解风格：详细 / 精简」可以控制每页讲多少，但页面本身的信息密度得你自己控制。
-- **公式和代码截图**：PDF 输入最稳；如果是 PPTX，公式可能变成图片或丢失，建议把公式页单独导出成图片再拼进去。
-- **动画和切换效果**：PPT 原生动画不会被继承。需要强调的地方交给场景动效（高亮、放大、聚光、箭头），比 PPT 动画更好控制。
-- **讲师本人的声音**：如果课程卖点就是「名师亲授」，AI 配音会削弱信任。这类课建议保留真人录音，只用它做字幕和动效。
+- **Slide text is too small.** On a phone, body copy under 24pt is mush. Fixing the deck is cheaper than fixing the video.
+- **Eight bullets per slide.** A video is not a handout. Two or three points per slide; split the rest into new pages. The "concise" narration style helps, but density is your call.
+- **Equations and code.** PDF input is the most reliable. With PPTX, export those pages as images and place them yourself.
+- **Native animations.** PowerPoint animations are not inherited. Use the six built-in scene animations for emphasis — they align to the narration, which PowerPoint transitions never do.
+- **The instructor's own voice.** If "taught by a named expert" is the product, an AI voice weakens trust. Keep the real recording and use the app for captions and covers.
 
-## 检查清单
+## Pre-publish checklist
 
-发布前过一遍 [发布前检查清单](../templates/export-checklist.md)，重点看这五项：
+Run through the [pre-publish checklist](../templates/export-checklist.md), and specifically:
 
-1. 每页讲稿是否都念得出声（有长句、括号、特殊符号的地方最容易翻车）
-2. 音色是否在整门课里保持一致
-3. 字幕有没有挡住图表的关键数字
-4. 章节时间点是否和实际内容对得上
-5. 封面在手机小图下能不能看清标题
+1. Every slide's script can actually be read aloud — long sentences, brackets and symbols break first
+2. The voice is consistent across the whole course
+3. Captions never cover the number a chart is making
+4. Chapter timestamps match the content
+5. The cover is legible as a thumbnail on a phone
 
-## 下一步
+## Next
 
-- [App Store 下载 SlideTalk](https://apps.apple.com/app/id6800015747)，用 [示例课件](../examples/chart-lesson/README.md) 先跑通一条 40 秒的
-- 想看完整的逐页讲稿写法：[演讲备注怎么变口播稿](../handbook/narration-and-speaker-notes.md)
-- 想比较别的做法：[四种做法对比](../compare/ppt-to-video-tools.md)
+- [Download SlideTalk](https://apps.apple.com/us/app/slidetalk-ppt-to-video-ai/id6800015747), then run the [sample lesson](../examples/chart-lesson/README.md) end to end
+- Full script-writing method: [speaker notes into a voiceover script](../handbook/narration-and-speaker-notes.md)
+- Comparing options: [four approaches](../compare/ppt-to-video-tools.md)

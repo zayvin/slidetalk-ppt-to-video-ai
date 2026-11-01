@@ -1,115 +1,115 @@
-# 四种「PPT 转视频」做法对比：录屏、剪辑、在线工具、SlideTalk
+# Four ways to turn a deck into video: screen recording, editing, online tools, SlideTalk
 
-搜「PPT 转视频」，你会得到四种完全不同的答案，因为它们解决的是四个不同的问题。选错工具不会做不出视频，但会让你多花几十个小时——或者干脆放弃。
+Search "PPT to video" and you get four different answers, because they solve four different problems. Picking the wrong one will not stop you making a video — it will just cost you dozens of hours, or make you quit halfway.
 
-这篇把四种做法的真实成本摊开写，包括 SlideTalk 自己不行的地方。
+Here is the real cost of each, including where SlideTalk itself falls short.
 
-## 一句话结论
+## The one-line summary
 
-| 做法 | 它真正解决的问题 | 一条 10 分钟视频的耗时 | 适合谁 |
+| Approach | The problem it actually solves | Time for a 10-minute video | Best for |
 | --- | --- | --- | --- |
-| 录屏 + 自己念 | 「把我说的话记下来」 | 4–6 小时 | 讲师个人 IP 就是卖点、必须真声出镜 |
-| 剪辑软件 + 自己配音 | 「让片子好看」 | 6–10 小时 | 有剪辑基础、追求画面质感 |
-| 在线 AI 转视频网站 | 「不想装软件」 | 1–3 小时 | 一次性的、不敏感的素材 |
-| **SlideTalk** | **「不用你亲自演」** | **10–20 分钟 + 审稿** | 要持续产出、不出镜、不上传素材 |
-| 外包制作 | 「我完全不想碰」 | 2–3 天（含沟通） | 预算充足、单条价值高 |
+| Screen recording + your own voice | "Capture what I said" | 4–6 hours | Teachers whose personal delivery *is* the product |
+| An editor + your own voiceover | "Make it look good" | 6–10 hours | People who already edit and want polish |
+| An online AI video site | "I do not want to install anything" | 1–3 hours | One-off, non-sensitive material |
+| **SlideTalk** | **"I do not want to perform it"** | **10–20 min + a review pass** | Anyone publishing regularly, off camera, without uploading |
+| Outsourcing | "I do not want to touch it at all" | 2–3 days including briefing | High-value single videos with budget |
 
-## 一、录屏 + 自己念（QuickTime / OBS / PowerPoint 录制）
+## 1. Screen recording (QuickTime, OBS, PowerPoint's own recorder)
 
-**优点**：零成本、真声、可信度高。教学场景里「老师本人的声音」有时就是产品本身。
+**Upside:** free, your real voice, high credibility. In teaching, the instructor's own voice is sometimes the product.
 
-**缺点**：
+**Downside:**
 
-- **口误要重录整段**。一个 10 分钟的段落，第 8 分钟说错一句，通常重录整段。
-- **节奏靠自觉**。没有人提示「这页该讲 40 秒」，很容易一页讲 3 分钟、下一页 10 秒。
-- **字幕是纯苦力**。要么手动对轴，要么用识别工具再逐句改错。
-- **改一页 = 重录**。这是最致命的：课件迭代一次，全部推倒。
+- **A flubbed sentence means re-recording the segment.** Say one word wrong at minute eight of a ten-minute section and you usually start the section again.
+- **Pacing is on you.** Nothing tells you "this slide deserves 40 seconds"; one slide gets three minutes, the next gets ten seconds.
+- **Captions are pure labour.** Either hand-time them or run a recogniser and fix its mistakes line by line.
+- **Changing one slide means re-recording.** This is the expensive part: iterate on the deck once and the whole thing is void.
 
-**什么时候选它**：你的课卖的是「名师亲授」，AI 声音会削弱信任。这种情况下，用录屏 + 用工具自动生成字幕和封面，是更聪明的组合。
+**Pick it when** your course sells "taught by this specific person" and an AI voice would undercut the trust. In that case, record as usual and use a tool for captions and covers.
 
-## 二、剪辑软件 + 自己配音（Premiere / Final Cut / 剪映专业版）
+## 2. An editor + your own voiceover (Premiere, Final Cut, CapCut)
 
-**优点**：画面控制力最强。能加任何转场、任何特效、任何音乐。
+**Upside:** total control. Any transition, any effect, any music bed.
 
-**缺点**：
+**Downside:**
 
-- **学习成本高**。剪映入门 2 小时，做出「不土」的片子要 50 小时。
-- **时间黑洞**。调一个转场调 20 分钟，是常态。
-- **它不解决内容**。剪辑软件不会替你写稿、配音、挑重点。
+- **The learning curve is real.** CapCut takes two hours to learn and fifty to stop looking amateur.
+- **It is a time sink.** Twenty minutes adjusting one transition is normal.
+- **It does not solve content.** An editor will not write your script, voice it, or decide what matters on a slide.
 
-**什么时候选它**：你已经会剪，且追求品牌级视觉。这种情况下 SlideTalk 可以作为「粗剪素材生成器」——用它出成片，再进剪辑软件做片头片尾和调色。
+**Pick it when** you already edit and care about a branded look. SlideTalk works well as a *rough-cut generator* in that workflow: render here, then finish the intro, music and grade in your editor.
 
-## 三、在线 AI 转视频网站
+## 3. Online AI video sites
 
-这类工具（Canva、各类「AI 视频生成」网站）通常是：上传 PPT → 云端渲染 → 下载 mp4。
+The pattern is usually: upload the deck, the cloud renders, download an mp4.
 
-**优点**：不用装软件，浏览器就能用，模板多。
+**Upside:** nothing to install, browser only, lots of templates.
 
-**缺点**：
+**Downside:**
 
-- **素材必须上传**。企业内部课件、未公开财报、客户名单——上传即出内网。
-- **排队**。免费额度通常要等，付费也要等云端队列。
-- **订阅制**。月付 19–99 美元，做三条和做三十条一个价。
-- **改一页要重跑整条**。云端流水线通常不支持「只重生成第 7 页」。
-- **中文语音质量参差**。很多产品的强项是英文，中文音色机械感明显。
+- **Your material has to be uploaded.** Internal training decks, unreleased financials, customer lists — uploading takes them outside your network.
+- **Queues.** Free tiers wait; paid tiers wait in a cloud queue too.
+- **Subscriptions.** $19–99 a month, whether you make three videos or thirty.
+- **One slide change re-runs the whole thing.** Cloud pipelines rarely support "regenerate page seven only".
+- **Chinese voice quality varies.** Many products are strong in English and audibly robotic in Chinese.
 
-**什么时候选它**：一次性任务、素材完全不敏感、只需要一个能看的 mp4。
+**Pick it when** it is a one-off, the material is not sensitive, and you just need a watchable mp4.
 
-## 四、SlideTalk（本仓库配套的 App）
+## 4. SlideTalk
 
-**它的定位不是「转格式」，是「替你演一遍，再替你把物料做完」**：
+**Its job is not format conversion. It is "perform it for you, then finish the assets".**
 
-1. 逐页生成讲解词（不是把幻灯片上的字念一遍）
-2. 上百款中英文音色配音（火山 Seed-TTS 2.0），4 种讲解模式
-3. 自动加字幕（烧进画面 + 旁挂 `.srt`）、6 种场景动效、Ken Burns 运镜
-4. 本机 AVFoundation 渲染，480p–4K，时长不限
-5. 发布中心：封面、标题、简介、标签、章节一次生成
+1. Writes a narration script per slide (not a read-aloud of the bullets)
+2. Voices it with 100+ AI voices on Volcengine Seed-TTS 2.0, across four narration modes
+3. Adds burned-in subtitles plus a sidecar `.srt`, six scene animations and Ken Burns motion
+4. Renders locally with AVFoundation, 480p to 4K, no length limit
+5. Generates the cover, title, description, tags and chapters in the Publish Center
 
-**优点**：
+**Upside:**
 
-- **不上传素材**：渲染在本机，项目在沙盒里
-- **改一页只改一页**：重新生成该页配音，其余不动
-- **按量付费，不订阅**：一条 10 页视频约 352 积分 ≈ ¥3.5；编辑、试听、渲染、导出永久免费
-- **中文优先**：42 款中文音色，不是英文产品的附属功能
-- **发布物料是差异点**：别的工具给你 mp4，它给你一整套能发的东西
+- **Nothing is uploaded.** Rendering happens on your machine; projects live in the app sandbox
+- **One slide change is one slide.** Regenerate that page's voiceover, leave the rest alone
+- **Pay per use, not a subscription.** A 10-slide video is about 352 credits (~US$0.50); editing, auditioning, rendering and export are free forever
+- **Chinese-first.** 100+ voices with the deepest Chinese coverage, not an English product with Chinese bolted on
+- **The publish bundle is the differentiator.** Other tools hand you an mp4; this hands you everything you need to post
 
-**它不行的地方（重要）**：
+**Where it falls short (important):**
 
-- **不支持 Windows**。只有 Mac（macOS 15.1+）、iPhone、iPad（iOS/iPadOS 17+）。
-- **不继承 PPT 原生动画**。渐变、图表动画、SmartArt 动效不会带过来，强调靠场景动效实现。
-- **不是剪辑软件**。没有多轨道、没有音乐库、没有调色、没有片头模板。要精修还是得进剪辑软件。
-- **AI 生成要联网、要积分**。完全离线只能编辑已有项目。
-- **不能直传平台**。当前版本导出发布包，需要手动上传到 B 站 / YouTube（直传在路线图上）。
-- **`.ppt` / `.key` 不支持**。得先另存为 `.pptx` 或 `.pdf`。
+- **No Windows.** Mac (macOS 15.1+), iPhone and iPad (iOS/iPadOS 17+) only.
+- **No PowerPoint animation import.** Gradients, chart animations and SmartArt motion do not carry over; emphasis comes from the built-in scene animations.
+- **It is not an editor.** No multi-track timeline, no music library, no grading, no intro templates. Fine-tuning still means an editor.
+- **AI generation needs a network and credits.** Offline, you can only edit what you already generated.
+- **No direct upload.** You export a bundle and post manually (direct upload is on the roadmap).
+- **No `.ppt` or `.key`.** Save as `.pptx` or `.pdf` first.
 
-## 五、外包制作
+## 5. Outsourcing
 
-**优点**：完全不占你的时间。
+**Upside:** it costs you no time at all.
 
-**缺点**：按分钟计价（常见几百到几千元一分钟），改一版等一天，沟通成本高于制作成本。适合单条价值高的品牌片，不适合周更。
+**Downside:** priced per finished minute (commonly hundreds to thousands), one revision per day, and the briefing often costs more than the production. Good for a single high-value brand piece; wrong for a weekly schedule.
 
-## 怎么选：三个问题
+## How to choose: three questions
 
-**问题 1：你要做几条？**
-1–2 条 → 外包或在线工具。10 条以上 → 效率工具才有意义。50 条以上 → 返工成本是主要成本，选能「改一页改一页」的。
+**1. How many videos?**
+One or two → outsource or an online tool. Ten or more → efficiency tooling starts to matter. Fifty or more → rework cost dominates, so pick whatever lets you change one page at a time.
 
-**问题 2：素材敏感吗？**
-涉及未公开数据、客户信息、内部制度 → 必须本机处理。
+**2. Is the material sensitive?**
+Unreleased data, customer information, internal policy → it has to be processed locally.
 
-**问题 3：你愿意出镜 / 出声吗？**
-愿意，且这是卖点 → 录屏 + 自动字幕。不愿意 → AI 配音。
+**3. Will you appear on camera or use your own voice?**
+Yes, and that is the selling point → record and use automatic captions. No → AI voiceover.
 
-## 混合方案（很多人在用）
+## The hybrid most people end up with
 
-真正高效的做法不是「只用一个工具」，而是：
+The efficient setup is not one tool, it is a chain:
 
-1. **写稿**：自己写骨架，AI 补细节（见 [口播稿写作提示词](../templates/voiceover-prompts.md)）
-2. **成片**：SlideTalk 出主版本（配音、字幕、动效、封面）
-3. **精修**：需要片头 / 音乐 / 调色的，把成片丢进剪辑软件
-4. **发布**：用发布中心生成的标题、简介、标签、章节直接粘贴
+1. **Script** — you write the skeleton, AI fills in detail (see the [voiceover writing prompts](../templates/voiceover-prompts.md))
+2. **Render** — SlideTalk produces the main cut: voiceover, captions, animations, cover
+3. **Polish** — if you need an intro, music or a grade, take that cut into your editor
+4. **Publish** — paste the generated title, description, tags and chapters straight in
 
-## 下一步
+## Next
 
-- [App Store 下载 SlideTalk](https://apps.apple.com/app/id6800015747)，600 积分够做 1.7 条
-- 按身份看方案：[课程录制](../use-cases/course-video.md) · [B 站知识区](../use-cases/bilibili-knowledge.md) · [财报解读](../use-cases/financial-report-video.md) · [企业培训](../use-cases/corporate-training.md) · [竖屏短视频](../use-cases/short-video.md)
-- 还有疑问：[常见问题](../faq/README.md)
+- [Download SlideTalk](https://apps.apple.com/us/app/slidetalk-ppt-to-video-ai/id6800015747) — 600 credits is about 1.7 videos
+- By role: [course video](../use-cases/course-video.md) · [Bilibili knowledge channel](../use-cases/bilibili-knowledge.md) · [financial report breakdown](../use-cases/financial-report-video.md) · [corporate training](../use-cases/corporate-training.md) · [vertical short video](../use-cases/short-video.md)
+- Still deciding: [FAQ](../faq/README.md)

@@ -1,189 +1,189 @@
-# 常见问题：PPT 转视频、AI 配音、字幕与收费
+# FAQ: PPT to video, AI voiceover, subtitles and pricing
 
-关于 SlideTalk 的高频问题，按主题分组。每条答案都尽量给具体数字，而不是「视情况而定」。
+Answers to the questions that come up most often, grouped by topic. Where a number exists, the answer gives the number.
 
-## 入门
+## Getting started
 
-### SlideTalk 是什么？
+### What is SlideTalk?
 
-SlideTalk（中文名 PPT讲解员）是一款苹果原生应用，把 PPT、PDF 和图片变成带 AI 配音、字幕、场景动效的讲解视频，并同时生成封面、标题、简介、标签和章节。同一个 App 覆盖 macOS、iOS 和 iPadOS，三端都在 App Store 上架。
+SlideTalk is an Apple-native app that turns PowerPoint decks, PDFs and images into narrated videos with AI voiceover, subtitles and scene animations — and generates the cover, title, description, tags and chapters alongside them. One universal app covers macOS, iOS and iPadOS, all available on the App Store.
 
-### 和普通「PPT 转视频」工具有什么区别？
+### How is it different from an ordinary PPT-to-video tool?
 
-普通工具做到「幻灯片 + 旁白 = mp4」就结束了。SlideTalk 多走两步：一是让视频像有人在讲——逐页 AI 讲稿、上百款音色、自动字幕、6 种场景动效、Ken Burns 运镜；二是让视频能发出去——封面、标题、简介、标签、章节一起生成。另外它用匿名 Apple 账号直接开用，不注册、不配 API Key，渲染在本机完成。
+Ordinary tools stop at "slides + narration = mp4". SlideTalk does two more things. First, it makes the video sound like a person is teaching: a per-slide AI script, 100+ voices, automatic captions, six scene animations and Ken Burns motion. Second, it makes the video publishable: cover, title, description, tags and chapters generated together. It also runs on an anonymous Apple account — no sign-up, no API keys — and renders on your own machine.
 
-### 三步能做出视频吗？
+### Can I really make a video in three steps?
 
-可以。第一步把 `.pptx` 或 `.pdf` 拖进 App；第二步用一句话说明受众和风格，选讲解模式、目标平台和音色；第三步逐页审稿后一键生成配音、动效和成片，发布中心同步产出封面标题。全程不需要出镜、不需要剪辑。
+Yes. Drop a `.pptx` or `.pdf` into the app; describe the audience and tone in one sentence and pick a narration mode, target platform and voice; review the script slide by slide and generate the voiceover, animations and final cut. The Publish Center produces the cover and title in the same pass. No camera, no editing.
 
-### 哪些人适合用？
+### Who is it for?
 
-只要内容能落到 PPT 上，就能转成视频。最常见的是网课老师和知识付费作者、B 站 / YouTube 知识区 UP 主、财经与行业分析师、企业培训和产品经理、小红书图文创作者。按身份的具体方案见 [场景库](../use-cases/README.md)。
+If your content already lives on slides, it can become video. The most common users are online course teachers and paid-course authors, Bilibili and YouTube knowledge creators, finance and industry analysts, corporate trainers and product marketers, and Xiaohongshu creators turning posts into video. Role-specific playbooks are in [use cases](../use-cases/README.md).
 
-### 我不会写讲稿，能直接用吗？
+### I am not a scriptwriter. Can I still use it?
 
-能。AI 会按每页内容自动生成讲解词，你只需要审。经验做法是先改开头两句和每页的过渡句，成片质感立刻不同。想让稿子更好的，可以用 [口播稿写作提示词](../templates/voiceover-prompts.md)。
+Yes. The AI writes a narration script from each slide and you review it. In practice, rewriting the opening two lines and each slide transition is enough to lift the whole video. If you want better drafts, use the [voiceover writing prompts](../templates/voiceover-prompts.md).
 
-## 文件格式
+## Files and formats
 
-### 支持哪些文件格式？
+### Which file formats are supported?
 
-`.pptx`、`.ppsx`、`.pdf`，以及 PNG / JPG / HEIC / WEBP 图片。可以从 Finder、微信、邮件、AirDrop 直接拖入。
+`.pptx`, `.ppsx`, `.pdf`, plus PNG, JPG, HEIC and WEBP images. You can drag files in from Finder, WeChat, Mail or AirDrop.
 
-### PPTX 和 PDF 应该选哪个？
+### PPTX or PDF — which should I use?
 
-PDF 逐页渲染成高清图，版式 100% 还原，图表、SmartArt、渐变、特殊字体、公式都在——**含复杂图表的课件优先用 PDF**。PPTX 按原始坐标重建文字、图片、形状和表格，文字清晰、文件小，但渐变、图表、SmartArt 和 PPT 原生动画不支持——**以文字和简单图形为主的课件用 PPTX**。展开说见 [PPTX 还是 PDF](../handbook/pptx-or-pdf.md)。
+PDF renders page by page as a high-resolution image and reproduces the layout exactly, including charts, SmartArt, gradients, unusual fonts and equations — **use PDF when the layout carries meaning**. PPTX rebuilds text, images, shapes and tables at their original coordinates: crisp text and small files, but gradients, charts, SmartArt and native PowerPoint animations are not reproduced — **use PPTX for text-heavy, simple decks**. More detail: [PPTX or PDF](../handbook/pptx-or-pdf.md).
 
-### 支持旧版 .ppt 或 Keynote 的 .key 吗？
+### Do you support old .ppt files or Keynote .key files?
 
-不支持。`.ppt` / `.pps` 和 `.key` 无法直接解析，请在 PowerPoint 或 Keynote 里另存为 `.pptx` 或 `.pdf` 再导入。
+No. `.ppt`, `.pps` and `.key` cannot be parsed directly. Save them as `.pptx` or `.pdf` in PowerPoint or Keynote first.
 
-### 一页放多少内容比较合适？
+### How much should go on one slide?
 
-视频不是讲义。建议一页 2–3 个要点，正文字号 24pt 起（竖屏 60pt 起）。页面信息密度决定了成片能不能看下去，这比任何工具设置都重要。
+A video is not a handout. Two or three points per slide, body text at 24pt or larger (60pt for vertical video). Information density decides whether anyone watches to the end — far more than any setting in the app.
 
-### 支持公式和代码吗？
+### What about equations and code?
 
-用 PDF 输入最稳，因为公式会被当作图像完整保留。用 PPTX 时，公式可能变成图片或丢失，建议把公式页单独导出成图片再拼进去。代码截图建议放大到占页面 2/3 以上，否则手机上糊。
+PDF input is the safest, because equations are preserved as images. With PPTX, equations may become images or drop out, so export those pages as images and add them back. For code, make the screenshot fill at least two-thirds of the slide, or it will be unreadable on a phone.
 
-## 配音与讲解
+## Narration and voices
 
-### 有多少种音色？
+### How many voices are there?
 
-上百款，基于火山 Seed-TTS 2.0，分「讲师·教育」「商务·播报」「亲切·生活」「爆款·特色」四类，支持 0.5x–2.0x 语速，可逐句试听，试听不消耗积分，所有音色都能免费用。目前中文和英文音色最全。
+More than a hundred, running on Volcengine Seed-TTS 2.0, grouped into lecturer/education, business/broadcast, warm/lifestyle and trending/character. Speed runs from 0.5x to 2.0x, you can audition line by line, and auditioning costs no credits. Chinese and English are the deepest today, and the library keeps growing.
 
-### 有几种讲解模式？
+### What narration modes are available?
 
-4 种：单人讲解、双人访谈、师生问答、新闻播报。双人模式会自动给两个角色分配不同音色，适合播客、周报解读、产品评测这类有对话感的视频。
+Four: solo narration, two-person interview, teacher–student Q&A, and news anchor. Two-person modes automatically give each role a different voice, which suits podcasts, weekly reviews and product teardowns.
 
-### 讲稿支持哪些语言？
+### Which languages can the script be in?
 
-中文、英文、中英双语。做海外版时，建议用目标语言重写内容意图而不是逐句直译，得到的是那个语言里自然的表达。
+Chinese, English, or bilingual. For an overseas edition, brief the AI in the target language rather than translating a finished script — you get prose written in that language instead of translated prose.
 
-### AI 配音听起来会不会很假？
+### Will the AI voice sound fake?
 
-主要看三点：句子长度、音色选择、语速。把长句拆短、选「自然」系音色、语速 1.05x 左右，观感会好很多。另外建议先做一页试听，满意再跑全篇——不要 10 页全生成完才发现音色不对。
+Three things decide it: sentence length, voice choice and speed. Split long sentences, pick a natural-sounding voice, and sit around 1.05x. Also audition on a single slide before generating ten — do not discover the wrong voice after paying for the whole deck.
 
-### 能用自己的声音吗？
+### Can I use my own voice?
 
-当前版本的配音由 AI 音色生成，不提供声音克隆。如果你的卖点就是「本人亲授」，建议用录屏 + 本 App 生成字幕和封面。
+Not in the current version; voiceover comes from the AI voice library, with no cloning. If "taught by me" is the selling point, record as usual and use the app for captions and covers.
 
-## 画面与字幕
+## Picture and subtitles
 
-### 有字幕吗？能导出 .srt 吗？
+### Are there subtitles? Can I export .srt?
 
-有，而且是自动的。讲稿会被切成 CJK 安全的短句硬压进画面，5 款样式预设可选（含短视频大字幕风格）；同时旁挂一份 `.srt` 文件，YouTube 想用软字幕就上传它。
+Yes, and they are automatic. The script is split into CJK-safe short lines and burned into the frame in one of five style presets (including the big short-video style). A sidecar `.srt` ships alongside it for platforms where you want soft subtitles.
 
-### 有哪些场景动效？
+### What scene animations are there?
 
-6 种：高亮、放大、聚光、箭头、下划线、括号。AI 会读这一页在讲什么，自动挑出该强调的区域，再用端上 Vision OCR 把范围精确贴到真实文字行上，不会框歪半个字。不满意可以在动效编辑器里拖拽微调和改触发时机。
+Six: highlight, zoom, spotlight, arrow, underline and bracket. The AI reads what the slide is saying and picks the region worth emphasising, then on-device Vision OCR snaps the box onto the real text lines so it never clips a character in half. You can drag and retime everything in the animation editor.
 
-### 有运镜和转场吗？
+### Is there camera motion and are there transitions?
 
-有。Ken Burns 缓慢缩放平移 + 页间渐变转场，静态幻灯片也有呼吸感，不再是「幻灯片录屏」。预览播放器和导出器共用同一套 compositor，看到的就是成片的。
+Yes. Ken Burns pans and zooms plus cross-fades between slides give static slides room to breathe, so it stops looking like a screen recording. The preview player and the exporter share one compositor, so the preview is the final cut.
 
-### 能导出多高的分辨率？有时长限制吗？
+### What resolution and length can I export?
 
-480p 到 4K 全开放，时长不限。长片可以在任意页打分段点，拆成多支视频分别导出（可选重复上一段末页做衔接），适合系列课和分 P 投稿。还能一键 H.264 重编码压缩体积。
+480p through 4K, with no length limit. Long decks can take a split point on any page and export as several videos (optionally repeating the last page of the previous segment for continuity), which is what a series or a multi-part upload needs. One-click H.264 re-encoding shrinks the file.
 
-### 导出文件太大怎么办？
+### The export file is too big. What now?
 
-用 App 内的一键 H.264 重编码压缩。另外注意：4K 导出的体积是 1080p 的数倍，平台上传上限通常 1080p 就够，除非你要做二次剪辑。
+Use the built-in H.264 re-encode. Also note that 4K is several times the size of 1080p, and most platforms cap uploads well below that unless you are re-editing.
 
-## 发布物料
+## Publishing assets
 
-### 封面、标题、简介、标签都是自动的吗？
+### Are the cover, title, description and tags really automatic?
 
-是。发布中心会按目标平台生成：封面（B 站 3:2 / YouTube 16:9 / Shorts 9:16 / 视频号 3:4）、一批带 CTR 说明的标题候选、200–500 字简介（含章节时间点和关键词）、每平台 5–15 个标签、以及按脚本语义切分的章节 `chapters.txt`。
+Yes. The Publish Center generates a cover per platform (Bilibili 3:2, YouTube 16:9, Shorts 9:16, WeChat Channels 3:4), a batch of title candidates with CTR notes, a 200–500 word description with chapter timestamps and keywords, 5–15 tags per platform, and `chapters.txt` split by script semantics.
 
-### 能一键上传到 B 站或 YouTube 吗？
+### Can it upload straight to Bilibili or YouTube?
 
-不能。当前版本导出的是完整发布包（视频、字幕、封面、标题候选、简介、标签、章节），复制粘贴到平台后台即可发布。直传能力在后续版本规划中。
+Not yet. The current version exports a complete bundle — video, subtitles, cover, title candidates, description, tags and chapters — which you paste into the platform. Direct upload is on the roadmap.
 
-### 能生成多个平台的不同版本吗？
+### Can I produce different versions for different platforms?
 
-能。创建项目时选目标平台，App 会自动调整画幅、渲染尺寸、封面规格和标题字数上限。同一份素材出横屏和竖屏两条，是很常见的用法。
+Yes. Pick the target platform when you create the project and the app adjusts aspect ratio, render size, cover spec and title length limits. Producing a horizontal cut and a vertical cut from the same deck is a common workflow.
 
-## 收费
+## Pricing
 
-### 多少钱？
+### How much does it cost?
 
-下载免费。导入、编辑、试听音色、渲染、导出**永久免费**（480p–4K、时长不限、封面与标题数量不限）。只有 AI 生成按积分计费：写讲稿 1 积分/页、配音 1 积分/10 字、AI 封面 80 积分/张、标题/简介/标签 2 积分/次。
+The download is free. Importing, editing, auditioning voices, rendering and export are **free forever** (480p to 4K, no length limit, no cap on covers or titles). Only AI generation is metered: narration 1 credit per slide, voiceover 1 credit per 10 characters, AI cover 80 credits per image, title/description/tags 2 credits per run.
 
-### 一条 10 分钟的视频要多少 AI 费用？
+### What does a 10-minute video cost in AI credits?
 
-约 352 积分，折合人民币约 3.5 元（含 AI 写稿和配音）。注册赠送 600 积分，够做约 1.7 条 10 页视频。
+About 352 credits, roughly US$0.50, covering the script and the voiceover. New accounts get 600 credits, enough for about 1.7 ten-slide videos.
 
-### 是订阅制吗？
+### Is it a subscription?
 
-不是。按量付费，积分永不过期，没有月费、没有席位费。
+No. Pay per use, credits never expire, no monthly fee and no seat licence.
 
-### 充值档位有哪些？
+### What top-up sizes exist?
 
-¥6 / ¥28 / ¥68 / ¥198 四档，对应 600 / 3000 / 8000 / 25000 积分。首充积分翻倍，且任意金额首充后永久去除导出水印。App Store 会按你所在地区的货币显示价格。
+US$0.99 / US$3.99 / US$9.99 / US$29.99, for 600 / 3,000 / 8,000 / 25,000 credits. The first purchase doubles the credits and removes the export watermark permanently. The App Store shows prices in your local currency.
 
-### 导出的视频有水印吗？
+### Is there a watermark on the export?
 
-未充值时导出带品牌水印；任意金额首充后永久去除。
+Yes until you top up; any first purchase removes it permanently.
 
-### 积分用完了会怎样？
+### What happens when credits run out?
 
-每次 AI 生成前 App 会先报价再冻结积分。余额不足时任务自动暂停并拉起充值面板，充值后从断点继续，不会重复扣费。
+Every AI run quotes a price and freezes the credits first. If the balance runs out the job pauses, the top-up sheet appears, and the job resumes from the same point after payment — nothing is charged twice.
 
-### 能退款吗？
+### Can I get a refund?
 
-按 Apple 的退款规则处理，退款后积分会自动冲正（余额可以为负，下次充值先抵扣）。
+Refunds follow Apple's rules, and credits are automatically reversed (the balance can go negative and is offset against your next top-up).
 
-## 账号与设备
+## Account and devices
 
-### 需要注册账号吗？
+### Do I need to create an account?
 
-不需要。App 用 Apple 的 AppTransaction 自动建立匿名身份并绑定积分钱包，首次打开即到账新人 600 积分。开发者侧只知道一个随机账号标识。
+No. The app uses Apple's AppTransaction to establish an anonymous identity and credit wallet, and grants 600 welcome credits on first launch. The developer only ever sees a random account identifier.
 
-### 换设备积分还在吗？
+### Do credits follow me to another device?
 
-在。同一个 Apple ID 下的所有设备共享同一个积分钱包，Mac、iPhone、iPad 通用。
+Yes. Every device signed into the same Apple ID shares one wallet across Mac, iPhone and iPad.
 
-### 支持哪些系统版本？
+### Which OS versions are required?
 
-macOS 15.1+、iOS 17+、iPadOS 17+。三端是同一个通用 App。
+macOS 15.1+, iOS 17+, iPadOS 17+. It is one universal app across all three.
 
-### 支持 Windows 吗？
+### Is there a Windows version?
 
-暂不支持。这是目前最大的限制——如果你只有 Windows 设备，需要一台 Mac 或用 iPad。鸿蒙版仍在规划中，尚未发布。
+No, and that is the biggest limitation. If you only have Windows machines you will need a Mac or an iPad. A HarmonyOS build is still planned, not shipped.
 
-## 隐私与网络
+## Privacy and network
 
-### 我的 PPT 会上传到服务器吗？
+### Is my deck uploaded to a server?
 
-不会。PPT 副本、幻灯片图、解说词、音频、视频、封面都存在 App 沙盒容器里，视频渲染由 AVFoundation 在本机完成，卸载 App 时随容器一并删除。
+No. Deck copies, slide images, scripts, audio, video and covers live in the app's sandbox container, and rendering runs on-device with AVFoundation. Uninstalling the app deletes the container with it.
 
-### 那什么会联网？
+### Then what does go over the network?
 
-只有 AI 生成环节：生成讲稿时发送该页的文本（开启视觉理解时额外发送该页图像），生成配音时发送要朗读的文本，生成封面时发送标题文案和风格要求。网关不存储用户内容。合成好的语音会缓存在本机，重复内容秒播。
+Only the AI steps: scripts send that slide's text (plus the slide image when visual understanding is on), voiceover sends the text to be read, covers send the title copy and style brief. The gateway does not store your content. Generated audio is cached locally, so repeated lines play instantly.
 
-### 能离线用吗？
+### Can I work offline?
 
-已生成好的脚本和素材可以离线编辑，视频渲染完全在本地，不联网也能导出。但 AI 写稿、配音、封面生成需要联网。
+You can edit an existing project and render without a connection — rendering is entirely local. AI script, voiceover and cover generation need a network.
 
-### 涉及敏感内容的课件怎么处理？
+### How should I handle sensitive material?
 
-建议关闭「视觉理解」（只发文本不发图）、把敏感页替换成占位页再导入、或者干脆不用 AI 生成讲稿而自己写稿。这条和用什么工具无关，是常识。
+Turn off visual understanding (text only, no images), replace sensitive slides with placeholders before importing, or write the script yourself instead of generating it. That advice applies to any tool, not just this one.
 
-## 其他
+## Everything else
 
-### 有教程和模板吗？
+### Are there tutorials and templates?
 
-有。仓库里有 [16 种语言的图文教程](../guides/zh-CN/README.md)、[可直接改的示例 PPT 和讲稿](../examples/chart-lesson/README.md)、[分镜表](../templates/storyboard.csv)、[发布前检查清单](../templates/export-checklist.md)。
+Yes. This repository has [tutorials in 16 languages](../guides/en/README.md), an [editable sample deck with scripts](../examples/chart-lesson/README.md), [storyboards](../templates/storyboard.csv) and a [pre-publish checklist](../templates/export-checklist.md).
 
-### 遇到问题怎么反馈？
+### How do I report a problem?
 
-在 [GitHub 仓库](https://github.com/zayvin/slidetalk-ppt-to-video-ai/issues) 提 issue，写清页面、原文和建议修改。App 内的功能问题建议直接通过 App Store 页面的「App 支持」反馈。
+Open an issue on the [GitHub repository](https://github.com/zayvin/slidetalk-ppt-to-video-ai/issues) with the page, the original wording and your suggested change. For app bugs, use "App Support" on the App Store listing.
 
-### 素材可以商用吗？
+### Can I use the material commercially?
 
-可以。本仓库的教程、示例 PPT、讲稿、字幕和表格以 CC BY 4.0 授权，自由改编与商用，注明来源即可。SlideTalk App 本身通过 App Store 单独分发。
+Yes. The guides, sample deck, scripts, subtitles and worksheets here are CC BY 4.0 — adapt and reuse them commercially with attribution. The SlideTalk app itself is distributed separately through the App Store.
 
 ---
 
-还有没答到的？[提个 issue](https://github.com/zayvin/slidetalk-ppt-to-video-ai/issues)，或者直接 [下载 App](https://apps.apple.com/app/id6800015747) 试一条——注册送的 600 积分够做 1.7 条 10 页视频。
+Something missing? [Open an issue](https://github.com/zayvin/slidetalk-ppt-to-video-ai/issues), or just [download the app](https://apps.apple.com/us/app/slidetalk-ppt-to-video-ai/id6800015747) — the 600 welcome credits cover about 1.7 ten-slide videos.

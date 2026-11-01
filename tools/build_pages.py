@@ -14,8 +14,8 @@ import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
 SECTIONS = ("guides", "examples", "handbook", "templates", "use-cases", "compare", "faq", "images")
-# Sections written in Chinese by default. Everything else is treated as English.
-CHINESE_SECTIONS = {"use-cases", "compare", "faq"}
+# Every page is English unless its filename carries a locale suffix
+# (course-video.zh-CN.md) or it lives under guides/<locale>/.
 LANGUAGES = {
     "en": ("English", "Guides by language", "Skip to content"),
     "zh-CN": ("简体中文", "按语言浏览指南", "跳至正文"),
@@ -53,7 +53,7 @@ OG_IMAGE = "images/og.jpg"
 def discover():
     """Map source paths to public routes. Directory routes end with a slash."""
     sources = [ROOT / "README.md", ROOT / "LICENSE.md"]
-    # Localized landing pages live at the repository root as README.<locale>.md.
+    # Translated landing pages sit next to the English one: README.<locale>.md
     sources += [p for p in sorted(ROOT.glob("README.*.md")) if p.is_file()]
     for section in SECTIONS:
         for path in sorted((ROOT / section).rglob("*")):
@@ -65,12 +65,15 @@ def discover():
         if not path.is_file():
             raise ValueError(f"Missing required public file: {path.name}")
         name = path.relative_to(ROOT).as_posix()
-        if path.name == "README.md":
-            route = name[:-len("README.md")]
-        elif path.parent == ROOT and path.name.startswith("README."):
-            route = path.stem[len("README."):] + "/"
-        elif path.suffix == ".md":
-            route = name[:-len(".md")] + "/"
+        if path.suffix == ".md":
+            base, locale = split_locale(name)
+            directory = posixpath.dirname(name)
+            prefix = directory + "/" if directory else ""
+            if locale:
+                # course-video.zh-CN.md -> use-cases/zh-CN/course-video/
+                route = prefix + locale + "/" + ("" if base == "README" else base + "/")
+            else:
+                route = prefix + ("" if base == "README" else base + "/")
         else:
             route = name
         if route in routes.values():
@@ -87,17 +90,33 @@ def relative_url(source_route, target_route):
     return quote(rel, safe="/~")
 
 
+def split_locale(name):
+    """Split `course-video.zh-CN.md` into ("course-video", "zh-CN")."""
+    stem = PurePosixPath(name).stem
+    if "." in stem:
+        base, suffix = stem.rsplit(".", 1)
+        if suffix in LANGUAGES:
+            return base, suffix
+    return stem, None
+
+
 def page_locale(source):
-    if source == "README.md":
-        return "en"
+    _, locale = split_locale(source)
+    if locale:
+        return locale
     parts = PurePosixPath(source).parts
-    if len(parts) == 1 and parts[0].startswith("README."):
-        return PurePosixPath(source).stem.split(".", 1)[1]
     if len(parts) > 2 and parts[0] == "guides":
         return parts[1]
-    if parts[0] in CHINESE_SECTIONS:
-        return "zh-CN"
     return "en"
+
+
+def translation_group(source):
+    """Pages sharing this key are translations of one another."""
+    base, _ = split_locale(source)
+    parts = PurePosixPath(source).parts
+    if len(parts) > 2 and parts[0] == "guides":
+        return "guides/" + base
+    return posixpath.join(posixpath.dirname(source), base)
 
 
 def is_landing_page(source):
@@ -283,13 +302,32 @@ def store_url(locale):
     return STORE_URL_US if locale == "en" else STORE_URL
 
 
+LOCALIZED_NAV = {
+    "use-cases/": "use-cases/{loc}/",
+    "compare/ppt-to-video-tools/": "compare/{loc}/ppt-to-video-tools/",
+    "faq/": "faq/{loc}/",
+}
+
+
+def locale_home(routes, locale):
+    """Return the route of the landing page in this locale, or the site root."""
+    if locale != "en" and f"{locale}/" in routes.values():
+        return f"{locale}/"
+    return ""
+
+
 def navigation(route, routes, locale):
     labels = 1 if locale in {"zh-CN", "zh-TW"} else 2
     links = []
     for target, zh, en in NAV:
-        if target in routes.values():
-            current = ' aria-current="page"' if route == target else ""
-            links.append(f'<a href="{relative_url(route, target)}"{current}>{zh if labels == 1 else en}</a>')
+        resolved = target
+        if locale != "en":
+            candidate = LOCALIZED_NAV.get(target, target).format(loc=locale)
+            if candidate in routes.values():
+                resolved = candidate
+        if resolved in routes.values():
+            current = ' aria-current="page"' if route == resolved else ""
+            links.append(f'<a href="{relative_url(route, resolved)}"{current}>{zh if labels == 1 else en}</a>')
     return '<div class="links">' + "".join(links) + f'<a class="cta" href="{store_url(locale)}">App Store</a></div>'
 
 
@@ -297,19 +335,19 @@ def render_article(article, route, base_url, guides, verification, routes):
     locale = page_locale(article.source)
     native, lang_label, skip = LANGUAGES[locale]
     canonical = base_url + "/" + quote(route, safe="/~")
-    language_home = is_landing_page(article.source) or route == guides.get(locale)
+    # Point every translation at its siblings so search engines pick one
+    # version per language instead of treating them as duplicates.
+    groups = {}
+    for src, target in routes.items():
+        if src.endswith(".md"):
+            groups.setdefault(translation_group(src), {})[page_locale(src)] = target
+    siblings = groups.get(translation_group(article.source), {})
     alternate = []
-    if is_landing_page(article.source):
-        # The README.<locale>.md files are translated landing pages: point them at
-        # each other so search engines pick one version per language.
-        homes = {page_locale(src): target for src, target in routes.items() if is_landing_page(src)}
-        for code, home in sorted(homes.items()):
-            alternate.append(f'<link rel="alternate" hreflang="{code}" href="{escape(base_url)}/{home}">')
-        alternate.append(f'<link rel="alternate" hreflang="x-default" href="{escape(base_url)}/">')
-    elif language_home:
-        for code, guide in guides.items():
-            alternate.append(f'<link rel="alternate" hreflang="{code}" href="{escape(base_url)}/{guide}">')
-        alternate.append(f'<link rel="alternate" hreflang="x-default" href="{escape(base_url)}/">')
+    if len(siblings) > 1:
+        for code, target in sorted(siblings.items()):
+            alternate.append(f'<link rel="alternate" hreflang="{code}" href="{escape(base_url)}/{target}">')
+        default = siblings.get("en") or siblings[sorted(siblings)[0]]
+        alternate.append(f'<link rel="alternate" hreflang="x-default" href="{escape(base_url)}/{default}">')
     menu = []
     for code, guide in guides.items():
         lang_name = LANGUAGES[code][0]
@@ -325,6 +363,7 @@ def render_article(article, route, base_url, guides, verification, routes):
     # Prefer a localized social card when one exists, e.g. images/zh-CN/og.jpg.
     og_path = f"images/{locale}/og.jpg" if f"images/{locale}/og.jpg" in routes else OG_IMAGE
     og_image = escape(base_url + "/" + og_path) if og_path in routes else ""
+    home = locale_home(routes, locale)
     og_alt = ("SlideTalk 把 PPT 变成带 AI 配音、字幕和封面的讲解视频。"
               if locale in {"zh-CN", "zh-TW"} else
               "SlideTalk turns a PowerPoint deck into a narrated video with subtitles, cover and titles.")
@@ -363,7 +402,7 @@ def render_article(article, route, base_url, guides, verification, routes):
 </head>
 <body>
 <a class="skip" href="#main">{skip}</a>
-<header><nav><a class="brand" href="{relative_url(route, '')}" dir="ltr"><span aria-hidden="true">▶</span> {SITE_NAME}</a>
+<header><nav><a class="brand" href="{relative_url(route, home)}" dir="ltr"><span aria-hidden="true">▶</span> {SITE_NAME}</a>
 {navigation(route, routes, locale)}
 <details><summary>{lang_label}</summary><div class="languages">{''.join(menu)}</div></details></nav></header>
 <main id="main" tabindex="-1"><article>{''.join(article.parts)}</article></main>

@@ -1,41 +1,41 @@
-# PPT 转视频方案库：按你的身份选一条最短路径
+# Playbooks: pick the shortest path for your job
 
-同一份 PPT，网课老师、B 站 UP 主、券商分析师、企业培训负责人的做法完全不一样。这里按「你是谁、要发到哪里、卡在哪一步」拆成五条路径，每条都给出具体设置、耗时量级和容易踩的坑。
+The same deck becomes a very different video depending on who you are — a course teacher, a Bilibili creator, an equity analyst and a compliance trainer all need different things from it. These five playbooks each give the concrete settings, the realistic time budget and the mistakes to avoid.
 
-| 你的场景 | 交付物 | 关键设置 | 读这篇 |
+| Your situation | What you deliver | Key settings | Read |
 | --- | --- | --- | --- |
-| 网课 / 知识付费 / 系列课 | 一门 20–40 课时的课程 | 单人讲解 · 讲师音色 · 分段导出 | [课程录制](course-video.md) |
-| B 站 / YouTube 知识区 | 每周 2–3 条 8–15 分钟视频 | 单人讲解 · B 站风格 · 发布中心 | [知识区日更](bilibili-knowledge.md) |
-| 财报 / 研报 / 行业分析 | 10–20 分钟深度解读片 | 双人访谈 · 章节时间点 · YouTube SEO | [财报解读](financial-report-video.md) |
-| 企业培训 / 产品演示 / 安全合规 | 标准化的内部课程 | 多语言音色 · 本机渲染 · 统一模板 | [企业培训](corporate-training.md) |
-| 小红书 / 抖音 / 视频号 | 9:16 竖屏短视频 | 短视频模板 · 大字幕 · 3 秒钩子 | [竖屏短视频](short-video.md) |
+| Online course / paid course / lecture series | 20–40 lessons | Solo narration · lecturer voice · chapter exports | [Course video](course-video.md) |
+| YouTube or Bilibili knowledge channel | 2–3 videos a week, 8–15 min | Solo narration · platform template · Publish Center | [Faceless channel](bilibili-knowledge.md) |
+| Earnings / research / industry analysis | A 10–20 minute deep dive | Two-person interview · chapters · YouTube SEO | [Financial breakdown](financial-report-video.md) |
+| Corporate training / product demo / compliance | Standardised internal courses | Multi-language voices · local render · one template | [Corporate training](corporate-training.md) |
+| TikTok / Shorts / Reels / Xiaohongshu | 9:16 vertical shorts | Short-video template · big captions · 3-second hook | [Vertical short video](short-video.md) |
 
-## 先确认一件事：你的素材适合哪种输入
+## First, decide how to feed it in
 
-三种输入方式决定了成片的上限，选错了后面怎么调都别扭：
+The input format sets the ceiling. Choose wrong and no amount of tweaking fixes it:
 
-- **`.pdf`**——逐页渲染成高清图，版式 100% 还原。**图表、SmartArt、渐变、特殊字体、公式**都在，因为本质上是把每一页当图片。代价是文字不可选中、文件大一点。**含复杂图表的课件优先用 PDF。**
-- **`.pptx`**——按原始坐标重建文字、图片、形状和表格，文字清晰、文件小，但渐变、图表、SmartArt 和 PPT 原生动画不支持。**以文字和简单图形为主的课件用 PPTX。**
-- **图片**（PNG / JPG / HEIC / WEBP）——你已经导出的页面截图，或手绘/白板拍照。适合临时拼一版。
+- **`.pdf`** renders each page as a high-resolution image, so the layout is reproduced exactly — **charts, SmartArt, gradients, unusual fonts and equations** all survive, because the page is treated as a picture. The cost: text is not selectable and files are larger. **Use PDF for chart-heavy decks.**
+- **`.pptx`** rebuilds text, images, shapes and tables at their original coordinates: crisp text, small files, but no gradients, charts, SmartArt or native PowerPoint animations. **Use PPTX for text-and-shape decks.**
+- **Images** (PNG, JPG, HEIC, WEBP) for pages you already exported, whiteboard photos, or hand-drawn frames.
 
-旧版 `.ppt` / `.pps` 和 Keynote `.key` 无法直接解析，先在 PowerPoint 或 Keynote 里另存为 `.pptx` 或 `.pdf`。展开说见 [PPTX 还是 PDF](../handbook/pptx-or-pdf.md)。
+Old `.ppt` / `.pps` files and Keynote `.key` files cannot be read directly — save them as `.pptx` or `.pdf` first. Full explanation: [PPTX or PDF](../handbook/pptx-or-pdf.md).
 
-## 五条路径共同的三个动作
+## Three moves every playbook shares
 
-不管走哪条，这三步都省不掉，也决定了成片质量：
+Whichever path you take, these three decide quality:
 
-1. **一句话说清受众**。写「面向考研学生讲这章数据结构」比写「讲解这个 PPT」得到的稿子差一个档次——前者会调整术语密度和例子，后者只会复述幻灯片上的字。
-2. **逐页审稿，别整篇接受**。AI 的第一版通常结构对、语气偏平。花 10 分钟改开头两句和每页的过渡句，成片质感立刻不同。改稿方法见 [演讲备注怎么变口播稿](../handbook/narration-and-speaker-notes.md)。
-3. **先渲 1 页试听**。音色和语速是主观的，10 页全生成再发现音色不对，积分就白花了。先做一页，满意再跑全篇。
+1. **Brief the audience in one sentence.** "Explain this data structures chapter to students preparing for a graduate exam" produces a different script from "explain this PPT" — the first adjusts terminology and examples, the second just reads the slides back.
+2. **Review slide by slide, never accept the whole draft.** The first pass is usually structurally right and tonally flat. Ten minutes rewriting the opening two lines and each transition changes the result noticeably. Method: [speaker notes into a voiceover script](../handbook/narration-and-speaker-notes.md).
+3. **Render one slide first.** Voice and speed are subjective; generating ten slides before discovering the voice is wrong wastes credits. Do one page, listen, then run the rest.
 
-## 想看别人怎么走完整条链路
+## See a full walkthrough
 
-[16 种语言的图文教程](../guides/zh-CN/README.md) 每篇都用一个不同的真实素材走完「幻灯片 → 讲稿 → 配音 → 字幕」，中文篇讲的是图表和图书馆志愿者培训，[财报篇](../guides/zh-CN/financial-report-video.md) 讲的是三页财报怎么拆成分镜。
+The [illustrated tutorials](../guides/en/README.md) each take different material through the whole chain — slides, script, voiceover, subtitles. The English one covers a password-recovery screen; the Chinese ones cover a chart and a library volunteer briefing; the [financial one](../guides/zh-CN/financial-report-video.md) splits a three-page earnings deck into shots.
 
-想先上手试试手感，用 [示例课件](../examples/chart-lesson/README.md) 走一遍：4 页 PPT、现成的中英文讲稿和 SRT，40 秒就能出一版。
+To get a feel for it first, use the [sample lesson](../examples/chart-lesson/README.md): four slides, ready-made scripts and SRT files, 40 seconds to a finished cut.
 
-## 下一步
+## Next
 
-- 要工具：[App Store 下载 SlideTalk](https://apps.apple.com/app/id6800015747)，注册送 600 积分，够做一条 10 页视频
-- 要对比：先看 [四种做法对比](../compare/ppt-to-video-tools.md)，确认这条路适合你
-- 要答疑：[常见问题](../faq/README.md)
+- Want the tool: [download SlideTalk](https://apps.apple.com/us/app/slidetalk-ppt-to-video-ai/id6800015747) — 600 credits, about 1.7 ten-slide videos
+- Want the comparison first: [four approaches compared](../compare/ppt-to-video-tools.md)
+- Want answers: [FAQ](../faq/README.md)

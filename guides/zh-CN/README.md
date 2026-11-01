@@ -27,6 +27,6 @@
 
 ## 继续看
 
-- 按身份选方案：[课程录制](../../use-cases/course-video.md) · [B 站知识区日更](../../use-cases/bilibili-knowledge.md) · [财报解读](../../use-cases/financial-report-video.md) · [企业培训](../../use-cases/corporate-training.md) · [竖屏短视频](../../use-cases/short-video.md)
-- 选哪种做法：[四种做法对比](../../compare/ppt-to-video-tools.md)
-- 格式、水印、积分、隐私：[常见问题](../../faq/README.md)
+- 按身份选方案：[课程录制](../../use-cases/course-video.zh-CN.md) · [B 站知识区日更](../../use-cases/bilibili-knowledge.zh-CN.md) · [财报解读](../../use-cases/financial-report-video.zh-CN.md) · [企业培训](../../use-cases/corporate-training.zh-CN.md) · [竖屏短视频](../../use-cases/short-video.zh-CN.md)
+- 选哪种做法：[四种做法对比](../../compare/ppt-to-video-tools.zh-CN.md)
+- 格式、水印、积分、隐私：[常见问题](../../faq/README.zh-CN.md)

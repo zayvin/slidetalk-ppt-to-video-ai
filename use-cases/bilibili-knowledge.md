@@ -1,74 +1,74 @@
-# B 站知识区 UP 主：不露脸、不开口，也能稳定周更
+# Faceless knowledge channel: publish three times a week without a camera
 
-知识区最残酷的不是没内容，是**更新频率**。一周一更，粉丝记不住你；一周三更，你自己先垮。绝大多数人卡在同一个地方：把「有知识」变成「有视频」的那 6 个小时。
+The hardest part of a knowledge channel is not ideas, it is **cadence**. One video a week and nobody remembers you; three a week and you burn out by month two. Almost everyone gets stuck in the same place: the six hours it takes to turn "I know this" into "there is a video".
 
-这条路径解决的就是那 6 个小时——你负责选题和审稿，剩下的写稿、配音、字幕、封面、标题、标签交给流水线。
+This playbook removes those six hours. You choose the topic and review the script; the writing, voiceover, captions, cover, title and tags come off a production line.
 
-## 为什么「不露脸」不是缺点
+## Why "faceless" is not a weakness
 
-知识区的观众要的是「讲清楚了」，不是「长得好看」。搜索结果里，纯图文 + 旁白的讲解视频占了很大比例，因为：
+Viewers of explainer content want to understand something, not to look at a face. Across search results, decks-plus-narration videos hold a large share of the category because:
 
-- 观众在通勤、做饭、睡前看，画面不是注意力焦点，**声音和结构**才是
-- 不露脸意味着**素材可以复用**：一份课件能出三条视频（正片、切片、答疑）
-- 不用化妆、不用布光、不用找场地，**录制环节的心理成本降到零**——这往往是决定你能不能坚持下去的关键
+- People watch on a commute, while cooking, before sleep — **the audio and the structure** carry the video, not the picture
+- No camera means **assets are reusable**: one deck yields three videos (main cut, a short, a Q&A)
+- No hair, no lighting, no location — **the psychological cost of recording drops to zero**, which is usually what decides whether you keep going
 
-## 一条 8 分钟视频的流水线
+## The line for one 8-minute video
 
-| 步骤 | 你做什么 | 花多久 |
+| Step | What you do | Time |
 | --- | --- | --- |
-| 1. 选题 | 从课程、教材、论文、行业报告里挑一个有反常识结论的点 | 30 分钟 |
-| 2. 做 PPT | 8–15 页，一页一个论点，字号 ≥ 24pt | 1–2 小时 |
-| 3. 导入 + 一句话 | 「面向 B 站大学生，讲为什么 X 会 Y，语气轻松但别油腻」 | 1 分钟 |
-| 4. 审稿 | 改开头 15 秒、每页过渡句、删掉 AI 的口水话 | 15–20 分钟 |
-| 5. 出片 | 生成配音 → 生成动效 → 渲染 | 3–5 分钟 |
-| 6. 发布物料 | 从封面候选里挑一张，标题挑一个，复制简介和标签 | 5 分钟 |
+| 1. Topic | Pick one counter-intuitive point from a course, textbook, paper or report | 30 min |
+| 2. Deck | 8–15 slides, one claim per slide, body text 24pt+ | 1–2 hours |
+| 3. Import + brief | "For undergraduates, explain why X causes Y, keep it light but not smug" | 1 minute |
+| 4. Review | Rewrite the first 15 seconds, each transition, delete filler | 15–20 min |
+| 5. Render | Generate voiceover → animations → video | 3–5 min |
+| 6. Publish assets | Pick a cover, pick a title, paste the description and tags | 5 min |
 
-第 2 步和第 4 步是你唯一必须亲自做的，其余都可以交给工具。这就是「一周三更」和「一周一更」的差别所在。
+Steps 2 and 4 are the only ones that need you. That is the difference between one upload a week and three.
 
-## 平台设置怎么选
+## Platform settings
 
-| 设置 | 建议值 | 说明 |
+| Setting | Recommended | Note |
 | --- | --- | --- |
-| 目标平台 | **B 站** | 决定 16:9 画幅、封面 3:2、标题 80 字上限 |
-| 讲解模式 | 单人讲解；做「锐评」类用**双人访谈** | 双人模式自动分配两个音色，一攻一守，比独白有张力 |
-| 音色 | 「爆款·特色」类偏活泼，「讲师·教育」类偏稳重 | 知识区两种都行，看你的账号人设 |
-| 字幕 | 大字幕样式（黄字黑边 / 白字黑边） | B 站默认不开字幕，硬压进画面是唯一可靠的方式 |
-| 讲解风格 | 精简 | 一页讲 2–3 个点，别念稿 |
-| 封面 | 3:2，标题 4–8 个字，高对比 | 手机端信息流里封面只有拇指大 |
+| Target platform | **YouTube** or **Bilibili** | Sets 16:9, cover ratio and title length limits |
+| Narration mode | Solo; **two-person interview** for commentary | Two voices give a hot-take format its tension |
+| Voice | Trending/character for energy, lecturer/education for authority | Pick one and keep it — a voice change is more jarring than a design change |
+| Captions | Big short-video style | Most viewers watch muted by default; burned-in is the only reliable option |
+| Narration style | Concise | Two or three points per slide, never read the bullets |
+| Cover | 4–8 words, high contrast | In a phone feed the thumbnail is thumb-sized |
 
-## 五个真正影响播放量的细节
+## Five details that actually move viewership
 
-**1. 前 15 秒给结论，不给背景**
-「今天我们来讲一下 XX 的三种方法」——观众划走了。换成「这三种方法里，前两种是错的」，完播率立刻不同。AI 写的第一句通常是前者，这句必须你自己改。
+**1. Lead with the conclusion, not the background**
+"Today we're going to look at three methods" — the viewer scrolls. "Two of these three methods are wrong" — they stay. The AI draft usually opens with the first version; rewrite it.
 
-**2. 标题里放搜索词，不放情绪词**
-「我裂开了」这种标题只有老粉点。新观众是通过搜索来的，他们在搜「XX 怎么算」「XX 和 YY 的区别」。发布中心给的标题候选会标注关键词覆盖，挑那个既有人搜、又不像 SEO 垃圾的。
+**2. Put the search term in the title, not the emotion**
+"I lost my mind" only works on existing subscribers. New viewers arrive through search, typing things like "how to calculate X" or "X vs Y". The Publish Center's title candidates flag keyword coverage — pick the one that is both searchable and not spammy.
 
-**3. 一页只讲一件事**
-AI 会老老实实把你写在幻灯片上的 8 个 bullet 全念一遍。别让它这么干——删到 3 个以内。页面信息密度降下来，动效才有地方放。
+**3. One idea per slide**
+The AI will faithfully read all eight bullets you put on a slide. Do not let it. Cut to three. Lower density also gives animations somewhere to land.
 
-**4. 用章节做「进度条」**
-8 分钟以上的视频，B 站观众会看进度条判断「还有多久」。章节时间点让他们知道「再坚持 2 分钟就到结论了」，这对完播率是正面的。
+**4. Use chapters as a progress bar**
+On anything over eight minutes, viewers check the timeline to decide whether to stay. Chapter timestamps tell them "the conclusion is two minutes away", which is good for completion rate.
 
-**5. 系列化，别单发**
-同一个课件拆成 3 条视频，标题统一前缀（比如「数据结构 Ep.3」），做成合集。合集带来的连续播放，比单条爆款更值钱。
+**5. Build series, not one-offs**
+Split one deck into three videos with a shared title prefix ("Data Structures Ep.3") and collect them into a playlist. Continuous playback from a series is worth more than a single spike.
 
-## 从一条到一周三条：复用策略
+## From one video to three a week
 
-- **一份课件 → 三条视频**：正片（完整讲解）、切片（只讲最反常识的那一页，做成 60 秒竖屏）、答疑（用师生问答模式重讲一遍常见误解）
-- **一条视频 → 三种物料**：视频发 B 站，`.srt` 字幕发 YouTube 做软字幕，封面图发小红书当图文首图
-- **旧视频 → 新版本**：数据更新了，只改那一页的稿，重新生成该页配音，其余不动
+- **One deck → three videos**: the main cut, a 60-second vertical short built from the most counter-intuitive slide, and a Q&A that re-covers the common misunderstandings in teacher–student mode
+- **One video → three assets**: the video for YouTube, the `.srt` for soft captions, the cover image as a Xiaohongshu or LinkedIn carousel opener
+- **Old video → new version**: data changed? Edit that one page's script, regenerate its voiceover, re-render
 
-## 常见坑
+## Common traps
 
-- **AI 配音的「AI 感」**：主要来自句子太长、句尾语调平。把长句拆成短句，选「自然」系音色，语速 1.05x，观感会好很多。
-- **动效太多**：每页都加放大 + 聚光 + 箭头，观众会晕。一页最多两个动效，留给真正需要强调的地方。
-- **封面标题太长**：手机上超过 8 个字就换行了，看起来像贴纸。
-- **忘了去掉品牌水印**：未充值导出的视频带水印。任意金额首充后永久去除，做号的话建议第一次就充。
+- **The "AI sound"**. It comes from long sentences and flat endings. Split sentences, pick a natural voice, run at about 1.05x.
+- **Too many animations.** Zoom plus spotlight plus arrow on every slide makes people seasick. Two per slide, reserved for the point that matters.
+- **Titles that wrap.** Past about eight words a thumbnail breaks into two lines and looks like a sticker.
+- **Forgetting the watermark.** Unwatermarked export requires any first top-up. If you are building a channel, do it on day one.
 
-## 下一步
+## Next
 
-- [App Store 下载 SlideTalk](https://apps.apple.com/app/id6800015747)，注册送 600 积分，够做一条 10 页视频
-- 想要现成的分镜表：[中文分镜表](../templates/storyboard-zh-CN.csv)
-- 想让稿子更好读：[口播稿写作提示词](../templates/voiceover-prompts.md)
-- 想看完整案例：[中文图文教程](../guides/zh-CN/README.md)
+- [Download SlideTalk](https://apps.apple.com/us/app/slidetalk-ppt-to-video-ai/id6800015747) — 600 credits, about 1.7 ten-slide videos
+- Storyboard template: [storyboard.csv](../templates/storyboard.csv)
+- Better drafts: [voiceover writing prompts](../templates/voiceover-prompts.md)
+- Full walkthrough: [English tutorial](../guides/en/README.md)

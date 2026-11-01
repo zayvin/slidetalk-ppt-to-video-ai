@@ -1,100 +1,96 @@
-# 企业培训与产品演示：把课件 PPT 变成标准化课程视频
+# Corporate training and product demos: turn a deck into a standard course video
 
-企业里最贵的不是做视频，是**重复讲同一件事**。同一套新人入职课件，一年讲 20 批；同一套产品演示，每个售前各讲一遍，讲法还不一样；同一套安全合规培训，要求全员学完并留痕。
+The expensive thing inside a company is not making a video. It is **delivering the same thing over and over**: the same onboarding deck for twenty cohorts a year, the same product demo re-told by every solutions engineer with slightly different words, the same compliance training that everyone must complete and someone must be able to prove.
 
-把课件做成视频，一次投入，后面所有人看同一版。真正卡住企业的通常是三个顾虑：**数据能不能出内网、内容会不会过期、多语言怎么办**。这篇逐个说清。
+Turn the deck into a video once and everyone sees the same version. What usually blocks that decision is three worries — **can the material leave the network, will the content go stale, and what about other languages**. Here is each, in order.
 
-## 三个顾虑，逐条拆
+## Worry 1: does the deck have to be uploaded?
 
-### 1. 课件能不能不上传
+No. SlideTalk renders video with Apple's AVFoundation **on the machine**, with nothing uploaded and nothing queued. Project files, slide images, scripts, audio and finished cuts stay in the app's sandbox container and are deleted when the app is uninstalled.
 
-能。SlideTalk 的视频渲染由 Apple AVFoundation **在本机完成**，不上传、不排队。项目文件、幻灯片图、解说词、音频、成片都存在 App 沙盒容器里，卸载 App 时随容器一并删除。
+Only AI generation needs a network, and it sends very little:
 
-需要联网的只有 AI 生成环节，而且发出去的东西很少：
-
-| 环节 | 发出去什么 | 不发什么 |
+| Step | What leaves the device | What does not |
 | --- | --- | --- |
-| 生成讲稿 | 该页的文本；开启「视觉理解」时额外发该页图像 | 其他页、原始 PPT 文件、你的历史项目 |
-| 生成配音 | 要朗读的那段文字 | 幻灯片内容、图片 |
-| 生成封面 | 标题文案和风格要求 | 课件内容 |
+| Script generation | That slide's text, plus the slide image if visual understanding is on | Other slides, the original file, your history |
+| Voiceover | The text to be read | Slide content, images |
+| Cover | The title copy and the style brief | Deck content |
 
-网关不存储用户内容。**如果课件涉及未公开财务数据或客户名单，建议关闭视觉理解、或把敏感页替换成占位页再导入**——这条建议和任何工具无关，是常识。
+The gateway does not store user content. **If the deck contains unreleased financials or customer lists, turn visual understanding off, or replace those pages with placeholders before importing** — that advice is tool-independent common sense.
 
-### 2. 内容会过期怎么办
+## Worry 2: what happens when content goes stale?
 
-这是企业内训最大的隐性成本：政策一改、产品一升级，全部视频作废重录。
+This is the biggest hidden cost in corporate training: a policy changes, a product ships, and every video is obsolete.
 
-用 PPT 做视频的好处就在这里——**视频和源文件是一一对应的**。改哪页改哪页：
+Because the video maps one-to-one onto the deck, updates are local:
 
-1. 打开原项目，定位到那一页
-2. 改讲稿（或者改完 PPT 重新导入那一页）
-3. 只重新生成这一页的配音和动效
-4. 重新渲染导出
+1. Open the project and go to that page
+2. Edit the script (or edit the deck and re-import that page)
+3. Regenerate only that page's voiceover and animations
+4. Re-render and export
 
-不用重录整节，也不用重新剪。一门 40 页的合规课程，改三条政策大约 20 分钟。
+No re-recording, no re-editing. A 40-page compliance course with three changed policies takes about twenty minutes.
 
-### 3. 多语言怎么办
+## Worry 3: what about other languages?
 
-同一份课件，讲稿切成英文（或中英双语），换英文音色，重新生成——得到一版英文课。日文、韩文同理。音色库里有 42 款中文 + 16 款英文，覆盖讲师·教育、商务·播报、亲切·生活、爆款·特色四类。
+Same deck, script regenerated in the target language, different voice — an English course. Japanese, Korean and the rest work the same way. The voice library has more than a hundred voices across lecturer, business, warm and trending styles.
 
-注意：**不要用逐句直译的稿子**。把内容意图用目标语言重写一遍（例如 "Explain to new hires in the US why we log every access request"），得到的是那个语言里自然的表达，而不是翻译腔。
+One caveat: **do not translate sentence by sentence**. Re-brief the content in the target language ("explain to new hires in the US why we log every access request") and you get prose written in that language rather than translated prose.
 
-## 常见企业场景的配置建议
+## Settings for common corporate scenarios
 
-| 场景 | 讲解模式 | 音色 | 平台 | 备注 |
+| Scenario | Mode | Voice | Platform | Note |
 | --- | --- | --- | --- | --- |
-| 新人入职 | 单人讲解 | 商务·播报（稳重、清楚） | YouTube / 播客规格 | 40 页拆成 5 章，分段导出 |
-| 产品演示 | 单人讲解 / 双人访谈 | 亲切·生活 + 商务·播报 | YouTube | 双人模式模拟「客户问、售前答」 |
-| 安全合规 | 单人讲解 | 商务·播报 | 播客 / 内网规格 | 语速 0.95x，字幕必开 |
-| 管理者培训 | 师生问答 | 讲师·教育 | YouTube | 问答结构更适合讨论抽象概念 |
-| 客服话术 | 双人访谈 | 亲切·生活 × 2 | 竖屏 | 9:16，方便手机端碎片学习 |
+| Onboarding | Solo | Business/broadcast, steady and clear | YouTube / podcast specs | 40 pages into 5 chapters, exported separately |
+| Product demo | Solo or two-person | Warm + business | YouTube | Two-person mimics "customer asks, SE answers" |
+| Compliance | Solo | Business/broadcast | Podcast / internal specs | 0.95x speed, captions always on |
+| Manager training | Teacher–student | Lecturer/education | YouTube | Q&A suits abstract discussion better |
+| Support scripts | Two-person | Warm × 2 | Vertical | 9:16 for phone-sized learning |
 
-## 一套标准化流程
+## A standard production process
 
-企业最怕的是「每个人做出来的视频风格都不一样」。建议先定一套模板，再批量生产：
+The corporate risk is that every video looks different. Fix a template first, then produce in batches:
 
-1. **定封面模板**：统一品牌色、Logo 位置、标题字号。发布中心的封面按平台出图，选一套固定模板后不要每次换。
-2. **定开场白**：前 10 秒统一（"本节属于 XX 系列第 3 讲"），观众有连续感。
-3. **定音色**：整个系列用同一个音色，语速统一。换音色比换封面更破坏一致性。
-4. **定章节规则**：每 5–8 页一个章节，章节名用「动作 + 对象」（"配置访问权限" 而不是 "第三部分"）。
-5. **定审核清单**：见下方。
+1. **Fix the cover template.** Brand colour, logo position, title size. The Publish Center outputs per-platform covers; pick one template and stop changing it.
+2. **Fix the opening line.** Same first ten seconds across the series ("This is lesson 3 of the X series") so learners feel continuity.
+3. **Fix the voice.** One voice for the whole series at one speed. Changing voice damages consistency more than changing the cover.
+4. **Fix the chapter rule.** One chapter every 5–8 pages, named as "verb + object" ("Configure access permissions", not "Part three").
+5. **Fix the review checklist.** Below.
 
-## 发布前审核清单（企业版）
+## Pre-publish checklist (corporate)
 
-- [ ] 敏感信息已脱敏（客户名、未公开财务数据、内网地址）
-- [ ] 数据引用标注了来源和日期
-- [ ] 合规声明放在视频开头或简介第一行
-- [ ] 音色、语速、封面模板与同系列其他视频一致
-- [ ] 字幕没有遮挡关键图表
-- [ ] 章节时间点与实际内容对得上
-- [ ] 导出分辨率符合内部播放平台要求（内网系统常见 1080p 上限）
-- [ ] 文件名符合内部命名规范（`部门_系列_讲次_版本_日期`）
+- [ ] Sensitive data redacted — customer names, unreleased financials, internal hostnames
+- [ ] Every figure has a source and a date
+- [ ] Compliance statement at the top of the video or first line of the description
+- [ ] Voice, speed and cover template match the rest of the series
+- [ ] Captions do not cover the key chart
+- [ ] Chapter timestamps match the content
+- [ ] Export resolution matches the internal player (1080p is a common ceiling)
+- [ ] File name follows the internal convention (`dept_series_lesson_version_date`)
 
-## 成本怎么算
+## What it costs
 
-企业采购最关心的是「一条视频多少钱」。SlideTalk 的计费是透明的按量制，没有订阅、没有席位费：
-
-| 项目 | 计费 |
+| Item | Charge |
 | --- | --- |
-| 导入、编辑、试听、渲染、导出 | 免费（480p–4K、时长不限） |
-| AI 写稿 | 1 积分 / 页 |
-| AI 配音 | 1 积分 / 10 字 |
-| AI 封面 | 80 积分 / 张 |
-| AI 标题 / 简介 / 标签 | 2 积分 / 次 |
-| 一条 10 页视频 | ≈ 352 积分 ≈ ¥3.5 |
+| Import, editing, audition, render, export | Free (480p–4K, no length limit) |
+| AI script | 1 credit per slide |
+| AI voiceover | 1 credit per 10 characters |
+| AI cover | 80 credits per image |
+| AI title / description / tags | 2 credits per run |
+| A 10-slide video | ≈ 352 credits ≈ US$0.50 |
 
-一门 40 页的课程，全套 AI 物料大约 15 元人民币。对比外包制作（通常按分钟计价，一分钟几百到几千元），差距是数量级的。**注意**：这是 AI 生成的成本，不含你的人力时间——真正的节省在「不用重录」。
+A 40-page course with full AI assets lands around US$2. Against outsourced production (priced per finished minute, often hundreds to thousands), the gap is an order of magnitude. **Note** this is AI cost, not your time — the real saving is not re-recording.
 
-## 采购前需要确认的事
+## Before procurement
 
-- **平台**：Mac（macOS 15.1+）、iPhone / iPad（iOS / iPadOS 17+）。**不支持 Windows**，如果团队全是 Windows 设备，需要一台 Mac 或用 iPad。
-- **账号**：不需要注册，App 用 Apple AppTransaction 建立匿名身份和积分钱包。企业批量使用时，建议用共享 Apple ID 或统一的采购账号，余额在同一个 Apple ID 的设备间共享。
-- **发票**：通过 App Store 内购，按 Apple 的规则开具（中国区可在 Apple 官网申请电子发票）。
-- **数据留存**：项目在本地，卸载即删；没有云端备份，重要项目建议定期导出成片和讲稿存档。
+- **Platforms:** Mac (macOS 15.1+), iPhone and iPad (iOS/iPadOS 17+). **No Windows build** — a Windows-only team needs a Mac or an iPad.
+- **Accounts:** no registration; the app uses Apple's AppTransaction for an anonymous identity and credit wallet. For team use, share one Apple ID or buy through one managed account so the wallet is shared across devices.
+- **Invoicing:** in-app purchase through the App Store; follow Apple's process for a receipt in your region.
+- **Retention:** projects are local. There is no cloud backup, so archive finished cuts and scripts periodically.
 
-## 下一步
+## Next
 
-- [App Store 下载 SlideTalk](https://apps.apple.com/app/id6800015747)
-- 格式怎么选：[PPTX 还是 PDF](../handbook/pptx-or-pdf.md)
-- 字幕和导出排错：[字幕与导出](../handbook/subtitles-and-export.md)
-- 完整答疑：[常见问题](../faq/README.md)
+- [Download SlideTalk](https://apps.apple.com/us/app/slidetalk-ppt-to-video-ai/id6800015747)
+- Choosing a format: [PPTX or PDF](../handbook/pptx-or-pdf.md)
+- Caption and export troubleshooting: [subtitles and export](../handbook/subtitles-and-export.md)
+- All questions: [FAQ](../faq/README.md)

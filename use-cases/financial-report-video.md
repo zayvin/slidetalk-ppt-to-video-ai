@@ -1,89 +1,89 @@
-# 财报与研报解读视频：把一张全是数字的 PPT 讲成 15 分钟深度片
+# Earnings and research decks: turn a wall of numbers into a 15-minute breakdown
 
-券商研报、财报拆解、行业分析——这类内容的素材天生就是 PPT，但也是**最难讲**的一类：一页上十几个数字，观众看两秒就晕。文字版研报有人读，是因为读者可以停下来算；视频不行，节奏一断就划走。
+Broker notes, earnings breakdowns, industry deep dives — the source material is always a deck, and it is also the **hardest** kind of deck to narrate: a dozen numbers on one page and the viewer checks out in two seconds. A written note works because the reader can stop and calculate. Video cannot; break the rhythm once and they scroll.
 
-所以这类视频的关键不是「把数字念出来」，而是**替观众做减法**：这页真正要看的是哪一个数？它和上季度比意味着什么？
+So the job is not reading the numbers out loud. It is **subtracting on the viewer's behalf**: which one number on this page matters, and what does it mean versus last quarter?
 
-## 适合谁
+## Who this is for
 
-- **财经博主**：公众号图文转视频，或做 YouTube 华人财经内容
-- **券商 / 基金研究员**：把内部路演材料做成可公开的科普内容
-- **行业分析师**：季度复盘、赛道梳理、公司对比
-- **企业 IR / 公关**：把业绩说明会材料做成 5 分钟版本
+- **Finance creators** moving a newsletter into video, or building a YouTube channel
+- **Sell-side and buy-side analysts** turning internal roadshow material into public explainers
+- **Industry analysts** doing quarterly reviews, sector maps, company comparisons
+- **IR and comms teams** compressing an earnings call deck into five minutes
 
-## 这类内容为什么特别适合双人模式
+## Why two-person mode fits this genre
 
-单人讲解讲财报，容易变成「数字播报」。而财报解读的真实场景是**一问一答**：
+A solo narration of an earnings deck turns into number-reading. Real analysis is a conversation:
 
-> 「毛利率从 42% 掉到 38%，是成本涨了还是降价了？」
-> 「两个都有。原材料涨了 3 个点，但更主要的是他们主动降了 ASP 抢份额。」
+> "Gross margin fell from 42% to 38%. Is that cost inflation or price cuts?"
+> "Both. Inputs took three points, but the bigger driver was them cutting ASP to defend share."
 
-这种对话结构天然解释了「为什么」，而不是只报「是多少」。SlideTalk 的**双人访谈**模式会自动给两个角色分配不同音色，你只需要在讲稿里用角色标记区分提问和回答。
+That structure explains *why*, not just *what*. SlideTalk's **two-person interview** mode assigns a different voice to each role automatically; you only mark who is asking and who is answering in the script.
 
-**师生问答**模式适合更基础的科普：学生问「什么是自由现金流」，老师答。财经新人向的内容用这个模式，完播率明显更好。
+**Teacher–student Q&A** works for a more basic audience: a student asks what free cash flow is, the teacher answers. For finance content aimed at beginners, completion rates are noticeably better with this mode.
 
-## 一条 15 分钟财报片的设置
+## Settings for a 15-minute earnings video
 
-| 设置 | 建议 |
+| Setting | Recommendation |
 | --- | --- |
-| 输入格式 | **PDF**——财报 PPT 里全是图表、渐变、SmartArt，只有 PDF 能 100% 还原 |
-| 讲解模式 | 双人访谈（深度解读）/ 师生问答（科普向） |
-| 音色 | 提问方用「亲切·生活」类，回答方用「商务·播报」类，反差明显 |
-| 目标平台 | YouTube（要做 SEO 和章节）/ B 站（要分 P 和标签） |
-| 章节 | 必开。8 章以上，观众靠章节判断值不值得看完 |
-| 讲稿语言 | 中文；做海外版时另生成英文讲稿 + 英文音色 |
+| Input | **PDF** — earnings decks are charts, gradients and SmartArt; only PDF reproduces them exactly |
+| Narration mode | Two-person interview for analysis, teacher–student for explainers |
+| Voices | Warm/lifestyle for the questioner, business/broadcast for the answer — the contrast carries the format |
+| Target platform | YouTube (SEO and chapters) or Bilibili (parts and tags) |
+| Chapters | Always on. Eight or more; viewers use them to decide whether to stay |
+| Script language | One language per edition; regenerate the script for the overseas version |
 
-## 三页财报怎么拆成 15 分钟
+## Splitting a three-page deck into fifteen minutes
 
-以一份典型的季度财报拆解为例（[中文教程里有完整案例](../guides/zh-CN/financial-report-video.md)）：
+A typical quarterly breakdown ([the Chinese tutorial has a full example](../guides/zh-CN/financial-report-video.md)):
 
-**第 1 页 · 一句话结论（90 秒）**
-不要从「公司成立于 XX 年」开始。第一句就是结论：「这份财报表面超预期，但收入质量在下降。」然后给出三个支撑点，让观众知道后面要听什么。
+**Page 1 · The verdict (90 seconds)**
+Do not start with "the company was founded in". Start with the conclusion: "This quarter beat on the headline, but the quality of revenue is deteriorating." Then give the three supporting points so the viewer knows what is coming.
 
-**第 2 页 · 拆数字（5–6 分钟）**
-一页图表只讲一个变化。讲毛利率时，先指基准线（"这条虚线是去年同期"），再说变化，最后说原因。**动效在这里最有用**：用「高亮」框住那个拐点，用「箭头」指向异常的那根柱子，观众的眼睛会跟着你的声音走。
+**Page 2 · The numbers (5–6 minutes)**
+One chart, one change. When explaining gross margin, point at the baseline first ("this dashed line is last year"), then the movement, then the cause. **This is where animations earn their keep**: highlight the inflection, arrow the outlier bar — the eye follows the voice.
 
-**第 3 页 · 意味着什么（4–5 分钟）**
-这是人类分析师相对 AI 的唯一优势：判断。给出你的假设、你的验证方式、你可能错在哪。这一段建议**完全自己写**，不要用 AI 生成——AI 会给出一堆正确但没信息量的废话。
+**Page 3 · What it means (4–5 minutes)**
+This is the only part where a human beats a model: judgement. State your assumption, how you would test it, and where you might be wrong. Write this section **yourself**. AI produces correct, information-free paragraphs here.
 
-剩下的时间给风险提示和下一季度的观察指标。
+Spend the rest on risks and the metrics to watch next quarter.
 
-## 讲数字的四个技巧
+## Four habits when narrating numbers
 
-1. **先给基准，再给变化**。「毛利率 38%」没有意义，「毛利率从 42% 掉到 38%，是三年最低」才有。
-2. **一次只说一个数**。一页 PPT 上有 12 个数字，视频里只讲 3 个，其余让观众自己看。
-3. **用类比换算**。「研发费用 42 亿」→「相当于每天烧掉 1150 万」。
-4. **把「同比 / 环比」说成人话**。「环比下滑 8%」→「比上个季度少赚了八分之一」。
+1. **Baseline first, then movement.** "38% gross margin" means nothing; "38%, down from 42%, the lowest in three years" means something.
+2. **One number at a time.** A slide may carry twelve figures; the narration covers three and lets the viewer read the rest.
+3. **Convert to human scale.** "R&D of 4.2 billion" becomes "about 11.5 million a day".
+4. **Translate the jargon.** "Down 8% quarter over quarter" becomes "it earned an eighth less than last quarter".
 
-## 平台差异
+## Platform differences
 
-| | B 站 | YouTube |
+| | Bilibili | YouTube |
 | --- | --- | --- |
-| 画幅 | 16:9 | 16:9 |
-| 封面 | 3:2，标题 4–8 字 | 16:9，缩略图里字要大 |
-| 标题 | 80 字上限，可长可短，关键词靠前 | 100 字上限，SEO 长尾更有效 |
-| 章节 | 分 P 或简介里的时间点 | 必须开，且第一个时间点必须是 0:00 |
-| 简介 | 200 字以内，带话题标签 | 200–500 字，含关键词和链接 |
-| 字幕 | 硬压进画面 | 优先软字幕（上传 `.srt`） |
+| Aspect | 16:9 | 16:9 |
+| Cover | 3:2, 4–8 characters | 16:9, large type |
+| Title | 80-character limit; keyword early | 100-character limit; long-tail SEO works |
+| Chapters | Parts, or timestamps in the description | Required, and the first must be 0:00 |
+| Description | Under 200 characters with hashtags | 200–500 words with keywords and links |
+| Subtitles | Burned in | Soft subtitles preferred — upload the `.srt` |
 
-发布中心的简介生成会按平台调整长度和格式，YouTube 场景还能另出一份英文 description。
+The Publish Center adjusts description length and format per platform, and can draft a separate English description for YouTube.
 
-## 合规与免责
+## Compliance
 
-财经内容务必在视频开头或简介里加免责声明：「本视频仅为个人观点，不构成投资建议。」这句话别省——它不影响播放量，但能省掉很多麻烦。
+Put a disclaimer at the top of the video or the first line of the description: "Opinions only, not investment advice." It costs nothing and saves a lot.
 
-另外注意：**未公开的财报数据、内幕信息不能做成视频**。公开披露的材料（年报、季报、招股书、公开研报）才是安全素材。
+Also: **material non-public information cannot go into a video**. Public filings, annual and quarterly reports, prospectuses and published research are safe; anything else is not.
 
-## 常见坑
+## Common traps
 
-- **图表页停留太短**：AI 按字数配音，图表页往往只有两句，观众来不及看。这类页手动加长讲稿，或者在动效编辑器里延长停留。
-- **数据来源没标注**：右下角小字写清「数据来源：公司 2026 Q3 财报」，可信度立刻不同。
-- **念错单位**：「亿」和「万」差一万倍。生成配音前把稿子里的数字通读一遍。
-- **全片一个语调**：15 分钟一个音色会疲劳。双人模式是最省力的解法。
+- **Chart pages go by too fast.** The AI writes to a character budget, and chart pages often get two sentences. Extend those scripts manually, or stretch the dwell time in the animation editor.
+- **No data source.** A small line bottom-right — "Source: company Q3 2026 filing" — changes how the whole video is read.
+- **Unit errors.** "Billion" and "million" differ by a thousand. Read every number in the script before generating audio.
+- **One flat tone for fifteen minutes.** Fatigue sets in. Two-person mode is the cheapest fix.
 
-## 下一步
+## Next
 
-- [App Store 下载 SlideTalk](https://apps.apple.com/app/id6800015747)，注册送 600 积分
-- 完整案例：[三页财报的分镜与讲稿](../guides/zh-CN/financial-report-video.md)
-- 图表页怎么排版：[发布前检查清单](../templates/export-checklist.md)
-- 其他做法对比：[四种做法对比](../compare/ppt-to-video-tools.md)
+- [Download SlideTalk](https://apps.apple.com/us/app/slidetalk-ppt-to-video-ai/id6800015747) — 600 credits on sign-up
+- Full example: [three-page earnings deck, shot by shot](../guides/zh-CN/financial-report-video.md)
+- Chart-page layout: [pre-publish checklist](../templates/export-checklist.md)
+- Other approaches: [four ways compared](../compare/ppt-to-video-tools.md)

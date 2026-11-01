@@ -1,91 +1,87 @@
-# 竖屏短视频：把图文和 PPT 变成 9:16 的知识短视频
+# Vertical short video: turn posts and decks into 9:16 knowledge shorts
 
-小红书、抖音、视频号、Shorts——竖屏是流量入口，也是知识类内容最难做的一种：**观众只给你 1.5 秒**。横屏那套「先铺垫再展开」在这里全部作废。
+TikTok, Shorts, Reels, Xiaohongshu — vertical is where discovery happens, and it is also the hardest format to do well: **the viewer gives you 1.5 seconds**. The horizontal playbook ("set up, then develop") is void here.
 
-好消息是：如果你已经有图文内容（笔记、长图、PPT），把它转成竖屏视频的成本，比从零拍一条低一个数量级。
+The good news: if you already have written content — posts, carousels, a deck — converting it costs an order of magnitude less than shooting from scratch.
 
-## 竖屏和横屏，是两种内容
+## Vertical and horizontal are different genres
 
-| | 横屏（B 站 / YouTube） | 竖屏（抖音 / 视频号 / Shorts / 小红书） |
+| | Horizontal (YouTube / Bilibili) | Vertical (TikTok / Shorts / Reels) |
 | --- | --- | --- |
-| 观众状态 | 坐下来，愿意花 8 分钟 | 划到，给你 1.5 秒 |
-| 一页信息量 | 2–3 个点 | **1 个点** |
-| 文字 | 正文 24pt 起 | **标题字 60pt 起**，正文能删就删 |
-| 节奏 | 每页 20–40 秒 | 每页 3–6 秒 |
-| 字幕 | 可选 | **必须**，且要大 |
-| 时长 | 8–15 分钟 | 45–90 秒 |
-| 结构 | 引入 → 展开 → 结论 | **钩子 → 一个点 → 结论** |
+| Viewer state | Sitting down, willing to spend 8 minutes | Scrolling, giving you 1.5 seconds |
+| Per-slide payload | 2–3 points | **1 point** |
+| Type | Body 24pt+ | **Headline 60pt+**, body minimal |
+| Pacing | 20–40 seconds per slide | 3–6 seconds per slide |
+| Captions | Optional | **Mandatory**, and large |
+| Length | 8–15 minutes | 45–90 seconds |
+| Structure | Intro → develop → conclusion | **Hook → one point → conclusion** |
 
-把横屏视频直接裁成竖屏是最常见的错误：文字被切掉、图表看不全、节奏太慢。正确做法是**重新做一版竖屏的**——但素材可以复用。
+Cropping a horizontal video into vertical is the classic mistake: text gets cut, charts lose their edges, pacing drags. Rebuild it instead — but reuse the material.
 
-## 一条 60 秒知识短视频的结构
+## Anatomy of a 60-second knowledge short
 
-| 时间 | 内容 | 画面 |
+| Time | Content | Frame |
 | --- | --- | --- |
-| 0–3 秒 | 一句反常识的结论 | 一页大字，只有一个句子 |
-| 3–10 秒 | 为什么这个结论成立 | 一个图表 / 一个对比 |
-| 10–45 秒 | 三个支撑点，每点 10 秒 | 每点一页，一个大字标题 |
-| 45–55 秒 | 一句总结 + 一个行动 | 大字 |
-| 55–60 秒 | 引导（关注 / 主页有完整版） | 二维码或账号名 |
+| 0–3 s | One counter-intuitive claim | One slide, one sentence |
+| 3–10 s | Why the claim holds | One chart or one comparison |
+| 10–45 s | Three supporting points, ~10 s each | One slide per point, one large heading |
+| 45–55 s | A one-line summary and one action | Large type |
+| 55–60 s | The ask (follow, full version on the channel) | Handle or QR |
 
-一页只讲一件事，是竖屏的铁律。你原来的 PPT 里，一页 8 个要点——在竖屏里要拆成 8 页。
+One idea per slide is the rule. If your existing deck has eight bullets on a page, vertical means eight pages.
 
-## 具体怎么设置
+## Settings
 
-| 设置 | 建议 |
+| Setting | Recommendation |
 | --- | --- |
-| 目标平台 | **抖音** / **视频号** / **YouTube Shorts**（决定 9:16 画幅和封面比例） |
-| 讲解模式 | 单人讲解；「辟谣 / 对喷」类用双人访谈 |
-| 音色 | 「爆款·特色」类，语速 1.1x–1.2x |
-| 字幕 | **大字幕样式**（黄字黑边 / 白字黑边），这是竖屏的标配 |
-| 讲解风格 | 精简（每页 2–3 个点，实际在竖屏里要更少） |
-| 动效 | 每页最多 1 个，且必须是「放大」或「高亮」 |
-| 时长 | 60 秒以内；超过 90 秒完播率断崖 |
+| Target platform | **TikTok / Shorts / Reels / Xiaohongshu** (sets 9:16 and the cover ratio) |
+| Narration mode | Solo; two-person for debate or myth-busting |
+| Voice | Trending/character, 1.1x–1.2x speed |
+| Captions | **Big short-video style** (yellow on black, or white on black) — this is the default for vertical |
+| Narration style | Concise, then cut further |
+| Animations | One per slide maximum, and only zoom or highlight |
+| Length | Under 60 seconds; completion falls off a cliff past 90 |
 
-## 从图文到竖屏的四条路径
+## Four routes from text to vertical
 
-**路径 A：笔记 → PPT → 视频**
-把小红书笔记的每一段拆成一页（一页一句话），导入，选竖屏，出片。这是最快的方式，1 小时能出一条。
+**A. Post → deck → video.** Break the post into one page per paragraph (one sentence per page), import, pick vertical, render. Fastest route: about an hour per video.
 
-**路径 B：长图 → 切片**
-长图切成 6–9 张 9:16 的图，作为图片导入，每张配一句旁白。
+**B. Carousel → slices.** Cut the carousel into six to nine 9:16 frames, import as images, one line of narration each.
 
-**路径 C：横屏视频 → 重新做竖屏**
-从横屏视频里挑出最反常识的 60 秒，重新做 6 页竖屏 PPT，重写讲稿。**不要裁切原视频**。
+**C. Horizontal video → rebuilt vertical.** Take the most counter-intuitive 60 seconds, rebuild six vertical slides, rewrite the script. **Do not crop the original.**
 
-**路径 D：一份 PPT → 横屏 + 竖屏两条**
-同一份课件出两条：横屏完整版发 B 站，竖屏精华版发抖音。素材一次做，内容两处发。
+**D. One deck → two cuts.** Horizontal full version for YouTube, vertical highlight for TikTok. Material made once, published twice.
 
-## 竖屏的封面和标题
+## Covers and titles for vertical
 
-- **封面**：9:16 全屏，字占画面 1/3 以上，最多 6 个字。抖音的封面在信息流里就是第一帧，**第一页幻灯片本身就该是封面**。
-- **标题**：抖音 / 视频号用 `#话题` 格式，5–8 个；小红书标题 20 字以内，前 10 个字最关键。
-- **前 3 秒**：不要 logo、不要「大家好」、不要背景音乐渐入。直接上结论。
+- **Cover:** full 9:16, type covering at least a third of the frame, six words maximum. In a feed the cover is the first frame, so **slide one should already be the cover**.
+- **Title:** hashtag format on TikTok and Reels, five to eight tags; on Xiaohongshu keep it under 20 characters with the first ten doing the work.
+- **First three seconds:** no logo, no "hey guys", no music fade-in. Lead with the claim.
 
-## 常见坑
+## Common traps
 
-- **字号太小**：把手机拿远 40cm，如果看不清，就是太小。
-- **一页塞太多**：竖屏一页超过 15 个字，观众就不看了。
-- **语速太慢**：横屏 1.0x 舒服，竖屏要 1.1x–1.2x，否则节奏拖。
-- **没有字幕**：静音刷是常态，没字幕等于没内容。
-- **结尾没有引导**：60 秒讲完就黑屏，等于白做。最后 5 秒必须有「完整版在主页」。
+- **Type too small.** Hold the phone 40cm away; if you cannot read it, it is too small.
+- **Too much on one page.** Past about fifteen characters per vertical slide, people stop reading.
+- **Pacing too slow.** 1.0x feels right horizontally; vertical needs 1.1x–1.2x.
+- **No captions.** Muted viewing is the norm; no captions means no content.
+- **No closing ask.** Sixty seconds, then black, is a wasted video. The last five seconds need a reason to follow.
 
-## 复用：一条内容，四个平台
+## One asset, four platforms
 
-同一份素材，改封面比例和标题就能分发：
+The same material, re-covered and re-titled, goes everywhere:
 
-| 平台 | 画幅 | 封面 | 标题风格 |
+| Platform | Aspect | Cover | Title style |
 | --- | --- | --- | --- |
-| 抖音 | 9:16 | 9:16 全屏 | `#` 话题，前 3 秒定生死 |
-| 视频号 | 9:16 | 9:16 | 偏稳重，适合 30+ 人群 |
-| YouTube Shorts | 9:16 | 9:16 | 英文关键词，`#Shorts` |
-| 小红书 | 3:4 或 9:16 | 首图当封面 | 20 字以内，带 emoji |
+| TikTok | 9:16 | Full 9:16 | Hashtags; the first 3 seconds decide everything |
+| YouTube Shorts | 9:16 | 9:16 | English keywords, `#Shorts` |
+| Instagram Reels | 9:16 | 9:16 | Short, hook-first |
+| Xiaohongshu | 3:4 or 9:16 | First image is the cover | Under 20 characters |
 
-SlideTalk 的发布中心会按你选的目标平台自动调整画幅、渲染尺寸、封面规格和标题字数上限，切换平台不用重做。
+The Publish Center adjusts aspect ratio, render size, cover spec and title limits per platform, so switching targets does not mean rebuilding the project.
 
-## 下一步
+## Next
 
-- [App Store 下载 SlideTalk](https://apps.apple.com/app/id6800015747)，注册送 600 积分
-- 分镜怎么排：[中文分镜表](../templates/storyboard-zh-CN.csv)
-- 字幕样式怎么选：[字幕与导出](../handbook/subtitles-and-export.md)
-- 横屏内容怎么做：[B 站知识区日更](bilibili-knowledge.md)
+- [Download SlideTalk](https://apps.apple.com/us/app/slidetalk-ppt-to-video-ai/id6800015747) — 600 credits on sign-up
+- Shot planning: [storyboard.csv](../templates/storyboard.csv)
+- Caption styles: [subtitles and export](../handbook/subtitles-and-export.md)
+- The horizontal version: [faceless knowledge channel](bilibili-knowledge.md)

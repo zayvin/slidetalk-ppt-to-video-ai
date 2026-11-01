@@ -18,7 +18,7 @@
 
 - **要工具** → [App Store 下载 SlideTalk](https://apps.apple.com/app/id6800015747)（Mac / iPhone / iPad，注册送 600 积分）
 - **要模板** → 直接拿 [示例 PPT 与讲稿](examples/chart-lesson/README.md)、[分镜表](templates/storyboard.csv)、[发布检查清单](templates/export-checklist.md)
-- **要方法** → 按你的身份看：[课程录制](use-cases/course-video.md) · [B 站知识区日更](use-cases/bilibili-knowledge.md) · [财报解读](use-cases/financial-report-video.md) · [企业培训](use-cases/corporate-training.md) · [竖屏短视频](use-cases/short-video.md)
+- **要方法** → 按你的身份看：[课程录制](use-cases/course-video.zh-CN.md) · [B 站知识区日更](use-cases/bilibili-knowledge.zh-CN.md) · [财报解读](use-cases/financial-report-video.zh-CN.md) · [企业培训](use-cases/corporate-training.zh-CN.md) · [竖屏短视频](use-cases/short-video.zh-CN.md)
 
 > In English: SlideTalk turns a PowerPoint deck or PDF into a narrated MP4 with AI voiceover, burned-in subtitles, scene animations, and a publish-ready cover, title, description, tags and chapters — natively on Mac, iPhone and iPad. This repository is the free companion kit: sample deck, scripts, SRT files, storyboards and tutorials in 16 languages. [Read the English guide](guides/en/README.md) · [App Store](https://apps.apple.com/app/id6800015747)
 
@@ -87,11 +87,11 @@
 
 | 你是 | 你的痛点 | SlideTalk 怎么解 | 具体做法 |
 | --- | --- | --- | --- |
-| 网课老师 / 课程讲师 | 一门课 30 个课时，录一遍要两个月，改一页就得重录 | 课件直接出片，改稿不用重录 | [课程录制与知识付费](use-cases/course-video.md) |
-| B 站 / YouTube 知识区 UP 主 | 一周三更做不到，出镜又有心理门槛 | 不露脸、不开口也能稳定日更 | [B 站知识区日更](use-cases/bilibili-knowledge.md) |
-| 财经 / 行业分析师、研究员 | 研报和财报 PPT 全是图表，自己讲不专业 | 双人访谈模式 + 章节，做成 10 分钟深度片 | [财报与研报解读](use-cases/financial-report-video.md) |
-| 企业培训 / 产品 / 安全合规 | 同一套课件要给几百人讲，还要多语言 | 一次成片，多语言音色，本机渲染不外传 | [企业培训与产品演示](use-cases/corporate-training.md) |
-| 小红书 / 抖音图文创作者 | 图文转视频要重做一遍 | 图文转成 PPT，直接出 9:16 竖屏 | [竖屏短视频](use-cases/short-video.md) |
+| 网课老师 / 课程讲师 | 一门课 30 个课时，录一遍要两个月，改一页就得重录 | 课件直接出片，改稿不用重录 | [课程录制与知识付费](use-cases/course-video.zh-CN.md) |
+| B 站 / YouTube 知识区 UP 主 | 一周三更做不到，出镜又有心理门槛 | 不露脸、不开口也能稳定日更 | [B 站知识区日更](use-cases/bilibili-knowledge.zh-CN.md) |
+| 财经 / 行业分析师、研究员 | 研报和财报 PPT 全是图表，自己讲不专业 | 双人访谈模式 + 章节，做成 10 分钟深度片 | [财报与研报解读](use-cases/financial-report-video.zh-CN.md) |
+| 企业培训 / 产品 / 安全合规 | 同一套课件要给几百人讲，还要多语言 | 一次成片，多语言音色，本机渲染不外传 | [企业培训与产品演示](use-cases/corporate-training.zh-CN.md) |
+| 小红书 / 抖音图文创作者 | 图文转视频要重做一遍 | 图文转成 PPT，直接出 9:16 竖屏 | [竖屏短视频](use-cases/short-video.zh-CN.md) |
 
 ## 定价：下载免费，只给 AI 生成付费
 
@@ -108,11 +108,11 @@
 
 不需要注册账号，不需要配置任何 API Key：App 用 Apple 的 AppTransaction 建立匿名身份和积分钱包，同一 Apple ID 的设备共享余额。每次 AI 生成前先报价再冻结，余额不足自动暂停，充值后从断点继续，不重复扣费。**不做订阅。**
 
-> App Store 按你所在地区的货币显示价格；上表的人民币档位是中国大陆区价格。完整规则见 [常见问题](faq/README.md)。
+> App Store 按你所在地区的货币显示价格；上表的人民币档位是中国大陆区价格。完整规则见 [常见问题](faq/README.zh-CN.md)。
 
 ## 和其他做法比，差在哪
 
-录屏软件、在线 AI 转视频网站、剪辑软件、外包——四种做法各有适用场景，我们把差异摊开写在一页里：[四种做法对比](compare/ppt-to-video-tools.md)。
+录屏软件、在线 AI 转视频网站、剪辑软件、外包——四种做法各有适用场景，我们把差异摊开写在一页里：[四种做法对比](compare/ppt-to-video-tools.zh-CN.md)。
 
 一句话总结：**录屏解决「记录」，剪辑解决「好看」，SlideTalk 解决「不用你亲自演」。**
 
@@ -130,9 +130,9 @@
 | [guides](guides/en/README.md) | 16 种语言的图文教程，每篇走完「幻灯片 → 讲稿 → 配音 → 字幕」一条完整链路 |
 | [handbook](handbook/pptx-or-pdf.md) | 三个具体问题的解法：[PPTX 还是 PDF](handbook/pptx-or-pdf.md)、[演讲备注怎么变口播稿](handbook/narration-and-speaker-notes.md)、[字幕遮挡与对轴排错](handbook/subtitles-and-export.md) |
 | [templates](templates/storyboard.csv) | 分镜表（中英双版）、[口播稿写作提示词](templates/voiceover-prompts.md)、[发布前检查清单](templates/export-checklist.md) |
-| [use-cases](use-cases/README.md) | 按身份写的落地方案：课程、UP 主、财报、企业培训、短视频 |
-| [compare](compare/ppt-to-video-tools.md) | 录屏 / 剪辑 / 在线工具 / SlideTalk 的诚实对比 |
-| [faq](faq/README.md) | 40 个高频问题：格式、水印、积分、多语言、隐私、Windows |
+| [use-cases](use-cases/README.zh-CN.md) | 按身份写的落地方案：课程、UP 主、财报、企业培训、短视频 |
+| [compare](compare/ppt-to-video-tools.zh-CN.md) | 录屏 / 剪辑 / 在线工具 / SlideTalk 的诚实对比 |
+| [faq](faq/README.zh-CN.md) | 40 个高频问题：格式、水印、积分、多语言、隐私、Windows |
 
 ### 试一条 40 秒的样片
 
@@ -196,7 +196,7 @@ App 界面、AI 讲稿、字幕渲染和这套教程都覆盖 16 种语言。下
 **我的 PPT 会上传到服务器吗？**
 不会。项目和成片都在本机沙盒里，渲染由 AVFoundation 本地完成；只有 AI 生成环节会把对应页面的文本（开启视觉理解时含该页图像）经网关转给模型服务商，网关不存储内容。
 
-更多问题见 [完整 FAQ](faq/README.md)。
+更多问题见 [完整 FAQ](faq/README.zh-CN.md)。
 
 ## 素材授权
 
